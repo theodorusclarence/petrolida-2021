@@ -6,6 +6,10 @@
     margin: 0 auto;
 }
 
+html {
+    /* scroll-behavior: smooth; */
+}
+
 h1,
 h2,
 h3 {
@@ -18,7 +22,7 @@ h1 {
 }
 
 h2 {
-    @apply text-4xl lg:text-5xl;
+    @apply text-2xl lg:text-5xl;
 }
 
 h3 {
@@ -27,4 +31,21 @@ h3 {
 
 body {
     font-family: 'Roboto', 'sans-serif';
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+.button-group > a {
+    margin: 0 0.5em;
+}
+
+/* Comps Component */
+.comps-group > figure:nth-child(7) {
+    @apply col-span-2 md:col-start-2 md:col-span-1;
 }
