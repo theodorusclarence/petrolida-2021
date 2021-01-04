@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Button from '../components/Button';
-import Card from '../components/Card';
 import Comps from '../components/Comps';
 import Navbar from '../components/Navbar';
 import NonComps from '../components/NonComps';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
     return (
