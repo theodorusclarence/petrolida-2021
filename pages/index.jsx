@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Button from '../components/Button';
 import Comps from '../components/Comps';
 import Footer from '../components/Footer';
@@ -10,8 +10,11 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+    const petrol = useRef(null);
+    const comp = useRef(null);
     useEffect(() => {
         gsap.to('.hero', { css: { visibility: 'visible' } });
+        gsap.to('#petrolida', { css: { visibility: 'visible' } });
         gsap.timeline().from(
             '.hero',
             {
@@ -26,24 +29,24 @@ export default function Home() {
         gsap.timeline({
             scrollTrigger: {
                 trigger: '#petrolida',
-                start: 'top 30%',
+                start: 'top 50%',
             },
         })
             .from('.left', {
                 opacity: 0,
-                duration: 1,
-                x: -100,
+                duration: 1.5,
+                x: -75,
                 ease: Power3.easeOut,
             })
             .from(
                 '.right',
                 {
                     opacity: 0,
-                    x: 100,
-                    duration: 1,
+                    x: 75,
+                    duration: 1.5,
                     ease: Power3.easeOut,
                 },
-                '-=1'
+                '-=1.5'
             );
 
         gsap.timeline({
@@ -63,7 +66,7 @@ export default function Home() {
             <Seo>
                 <title>Petrolida 2021</title>
             </Seo>
-            <Navbar />
+            <Navbar comp={comp} />
             <div>
                 <section
                     id='hero'
@@ -88,13 +91,18 @@ export default function Home() {
                         </blockquote>
                         <div className='hero flex justify-center button-group'>
                             <Button
-                                href=''
-                                onClick={() =>
-                                    window.scrollTo({
-                                        top: window.innerHeight,
+                                href='#'
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    petrol?.current.scrollIntoView({
                                         behavior: 'smooth',
-                                    })
-                                }
+                                    });
+
+                                    // window.scrollTo({
+                                    //     top: window.innerHeight,
+                                    //     behavior: 'smooth',
+                                    // });
+                                }}
                             >
                                 Learn More
                             </Button>
@@ -105,7 +113,11 @@ export default function Home() {
                     </main>
                 </section>
 
-                <section id='petrolida' className='bg-primary py-24 text-white'>
+                <section
+                    id='petrolida'
+                    ref={petrol}
+                    className='overflow-hidden bg-primary py-24 text-white'
+                >
                     <main className='container'>
                         <div className='mb-16 flex flex-col md:flex-row justify-center items-center'>
                             <div className='left md:text-right'>
@@ -155,6 +167,7 @@ export default function Home() {
 
                 <section
                     id='competition'
+                    ref={comp}
                     className='py-20 text-center'
                     style={{
                         backgroundImage: 'url("/img/bg-comp.jpg")',
@@ -190,7 +203,8 @@ export default function Home() {
                         padding-top: 56.25%;
                     }
 
-                    .hero {
+                    .hero,
+                    #petrolida {
                         visibility: hidden;
                     }
                 `}</style>
