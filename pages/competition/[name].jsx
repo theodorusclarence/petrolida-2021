@@ -2,6 +2,8 @@ import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Head from 'next/head';
+import Seo from '../../components/Seo';
+import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import { comps } from '../../store/data';
 
@@ -11,11 +13,11 @@ export default function Competition({ comp }) {
 
     return (
         <>
-            <Head>
+            <Seo>
                 <title>Petrolida 2021</title>
                 <link rel='icon' href='/favicon.ico' />
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-            </Head>
+            </Seo>
 
             <Navbar />
 
@@ -304,6 +306,8 @@ export default function Competition({ comp }) {
                     </main>
                 </section>
                 {/* End of Register Section */}
+
+                <Footer/>
             </div>
         </>
     );
