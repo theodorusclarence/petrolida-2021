@@ -19,7 +19,7 @@ export default function Competition() {
             <Navbar />
 
             <div>
-                {/* Jumbotron Section */}
+                {/* Hero Section */}
                 <section
                     className='py-52'
                     style={{
@@ -56,7 +56,7 @@ export default function Competition() {
                         </div>
                     </main>
                 </section>
-                {/* End of Jumbotron Section */}
+                {/* End of Hero Section */}
 
                 {/* About Section */}
                 <section id='about' className='py-24 text-primary'>
@@ -106,7 +106,7 @@ export default function Competition() {
                                                 <p>Deadline : 13 January 2021</p>
                                             </div>
                                         </div>
-                                        <div className="md:w-64 w-full p-5">
+                                        <div className="md:w-64 p-5">
                                             <img src="https://www.flaticon.com/svg/static/icons/svg/3638/3638142.svg" alt="step 1" className="object-scale-down w-32 h-32"/>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@ export default function Competition() {
                                                 <p>Submission / Deadline : 28 January 2021</p>
                                             </div>
                                         </div>
-                                        <div className="md:w-64 w-full p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/1756/1756679.svg" alt="step 2" className="object-scale-down w-32 h-32"/></div>
+                                        <div className="md:w-64 p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/1756/1756679.svg" alt="step 2" className="object-scale-down w-32 h-32"/></div>
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +174,7 @@ export default function Competition() {
                                                 <p>Submission / Deadline : 25 February 2021</p>
                                             </div>
                                         </div>
-                                        <div className="md:w-64 w-full p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/2665/2665430.svg" alt="step 3" className="object-scale-down w-32 h-32"/></div>
+                                        <div className="md:w-64 p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/2665/2665430.svg" alt="step 3" className="object-scale-down w-32 h-32"/></div>
                                     </div>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@ export default function Competition() {
                                                 <p>Case Release & Working Time : 4 March - 6 March 2021</p>
                                             </div>
                                         </div>
-                                        <div className="md:w-64 w-full p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/2641/2641497.svg" alt="step 4" className="object-scale-down w-32 h-32"/></div>
+                                        <div className="md:w-64 p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/2641/2641497.svg" alt="step 4" className="object-scale-down w-32 h-32"/></div>
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@ export default function Competition() {
                                                 <p>Date : 6 March 2021</p>
                                             </div>
                                         </div>
-                                        <div className="md:w-64 w-full p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/201/201594.svg" alt="step 3" className="object-scale-down w-32 h-32"/></div>
+                                        <div className="md:w-64 p-5"><img src="https://www.flaticon.com/svg/static/icons/svg/201/201594.svg" alt="step 3" className="object-scale-down w-32 h-32"/></div>
                                     </div>
                                 </div>
                             </div>
@@ -245,7 +245,6 @@ export default function Competition() {
                 {/* End of Keydates Section */}
 
                 {/* Prize  Section */}
-
                 <section id="prize" className='py-24 flex justify-center items-center'>
                     <main className='container'>
                         <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
@@ -303,7 +302,7 @@ export default function Competition() {
                         </div>
                     </main>
                 </section>
-                {/* End of Jumbotron Section */}
+                {/* End of Register Section */}
             </div>
         </>
     );
