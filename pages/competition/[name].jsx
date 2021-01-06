@@ -36,14 +36,14 @@ export default function Competition({ comp }) {
                 start: 'top 50%',
             },
         })
-            .from('.left', {
+            .from('.about-left', {
                 opacity: 0,
                 duration: 1.5,
                 x: -75,
                 ease: Power3.easeOut,
             })
             .from(
-                '.right',
+                '.about-right',
                 {
                     opacity: 0,
                     x: 75,
@@ -69,6 +69,29 @@ export default function Competition({ comp }) {
                 },
                 '+=0.5'
             );
+        
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '#register',
+                    start: 'top 50%',
+                },
+            })
+                .from('.register-left', {
+                    opacity: 0,
+                    duration: 1.5,
+                    x: -75,
+                    ease: Power3.easeOut,
+                })
+                .from(
+                    '.register-right',
+                    {
+                        opacity: 0,
+                        x: 75,
+                        duration: 1.5,
+                        ease: Power3.easeOut,
+                    },
+                    '-=1.5'
+                );
     }, []);
 
     const seoData = {
@@ -138,13 +161,13 @@ export default function Competition({ comp }) {
                             About The Competition
                         </h2>
                         <div className='mb-4 flex flex-col-reverse md:flex-row justify-center items-center'>
-                            <div className='left md:text-left'>
+                            <div className='about-left md:text-left'>
                                 <p className='mb-4 md:max-w-md '>
                                     {comp.about}
                                 </p>
                             </div>
                             <img
-                                className='right mb-4 mx-auto md:mx-0 max-h-44 md:max-h-64'
+                                className='about-right mb-4 mx-auto md:mx-0 max-h-44 md:max-h-64'
                                 src='/img/what.png'
                                 alt='illus'
                             />
@@ -365,10 +388,10 @@ export default function Competition({ comp }) {
                     }}
                 >
                     <main className='container'>
-                        <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
+                        <h2 className='register-left text-center text-primary pb-16 md:translate-x-1/2'>
                             So, what are you wating for?
                         </h2>
-                        <div className='flex justify-center button-group'>
+                        <div className='register-right flex justify-center button-group'>
                             <Button href='/' outline>
                                 Register Now
                             </Button>
