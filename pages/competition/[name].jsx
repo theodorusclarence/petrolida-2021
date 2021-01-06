@@ -6,17 +6,80 @@ import Seo from '../../components/Seo';
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
 import { comps } from '../../store/data';
+import gsap, { Power3 } from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Competition({ comp }) {
     const router = useRouter();
     const { name } = router.query;
 
+    useEffect(() => {
+        gsap.to('.hero', { css: { visibility: 'visible' } });
+        gsap.to('#about', { css: { visibility: 'visible' } });
+
+        gsap.timeline().from(
+            '.hero',
+            {
+                opacity: 0,
+                y: 50,
+                stagger: 0.1,
+                ease: Power3.easeOut,
+            },
+            '+=0.5'
+        );
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#about',
+                start: 'top 50%',
+            },
+        })
+            .from('.left', {
+                opacity: 0,
+                duration: 1.5,
+                x: -75,
+                ease: Power3.easeOut,
+            })
+            .from(
+                '.right',
+                {
+                    opacity: 0,
+                    x: 75,
+                    duration: 1.5,
+                    ease: Power3.easeOut,
+                },
+                '-=1.5'
+            );
+        
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#prize',
+                start: 'top 50%',
+            },
+        })
+            .from(
+                '.place',
+                {
+                    opacity: 0,
+                    y: 50,
+                    stagger: 0.1,
+                    ease: Power3.easeOut,
+                },
+                '+=0.5'
+            );
+    }, []);
+
+    const seoData = {
+        pageTitle: `${comp.title} | Petrolida 2021`,
+        img: comp.img,
+    };
+
     return (
         <>
-            <Seo>
-                <title>Petrolida 2021</title>
-                <link rel='icon' href='/favicon.ico' />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+            <Seo seoData={seoData}>
+                <title>{seoData.pageTitle}</title>
             </Seo>
 
             <Navbar />
@@ -24,37 +87,44 @@ export default function Competition({ comp }) {
             <div>
                 {/* Hero Section */}
                 <section
-                    className='py-52'
+                    className='bg-gray-300 flex items-center min-h-screen'
                     style={{
-                        backgroundImage: 'url("/img/bg-hero.jpg")',
+                        backgroundImage: `url("/img/bg-${comp.img}.jpg")`,
+                        backgroundPosition: 'center center',
                         backgroundSize: 'cover',
                     }}
                 >
                     <main className='container'>
-                        <div className='mb-16 flex flex-col-reverse md:flex-row justify-center items-center'>
-                            <div className='left md:text-left'>
-                                <h1 className='my-4'>
-                                    Business Case Competition
-                                </h1>
-                                <blockquote className='mb-4 md:max-w-md'>
-                                    Adapting to Consumer Behaviour During a Time of Crisis
+                        <div className='mb-16 md:mb-0 flex flex-col-reverse md:flex-row justify-center items-center'>
+                            <div className='w-full md:ml-12 md:text-left text-primary'>
+                                <h1 className='hero my-4 text-primary'>{comp.title}</h1>
+                                <blockquote className='hero mb-4 md:max-w-md'>
+                                    {comp.quote}
                                 </blockquote>
-                                <div className='items-center space-x-4'>
-                                    <Button href='/' outline>
+                                <div className='hero items-center space-x-4'>
+                                    <Button href='/'>
                                         Guidebook
                                     </Button>
-                                    <button className="p-2 md:p-3 justify-center items-center text-center text-white bg-primary rounded-full hover:bg-hover">
-                                        <svg className="w-3 h-3 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                    <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-primary rounded-full hover:bg-hover'>
+                                        <svg
+                                            className='w-3 h-3 text-white'
+                                            xmlns='http://www.w3.org/2000/svg'
+                                            viewBox='0 0 20 20'
+                                            fill='currentColor'
+                                        >
+                                            <path
+                                                fillRule='evenodd'
+                                                d='M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z'
+                                                clipRule='evenodd'
+                                            />
                                         </svg>
                                     </button>
-                                    
                                 </div>
                             </div>
                             <img
-                                className='right mx-auto md:mx-0 max-h-44 md:max-h-64'
-                                src='/img/what.png'
-                                alt='illus'
+                                className='hero mx-auto md:mx-0'
+                                src={`/img/logo-${comp.img}.png`}
+                                alt='Illustrasi'
                             />
                         </div>
                     </main>
@@ -70,7 +140,7 @@ export default function Competition({ comp }) {
                         <div className='mb-4 flex flex-col-reverse md:flex-row justify-center items-center'>
                             <div className='left md:text-left'>
                                 <p className='mb-4 md:max-w-md '>
-                                    Business Case Competition will challenge your skills in coming up with a solution to a problem using various tools and frameworks. In Petrolida’s first ever Business Case Competition, you will act as a consultant providing their service to a company in dire need of help during this time of crisis. This, however, is no ordinary competition, register now to find out more!
+                                    {comp.about}
                                 </p>
                             </div>
                             <img
@@ -254,26 +324,26 @@ export default function Competition({ comp }) {
                             Competition Prize
                         </h2>
                         <img
-                            className='mx-auto w-full max-w-lg'
+                            className='place mx-auto w-full max-w-lg'
                             src='/img/compeprize.svg'
                             alt='Logo Petrolida'
                         />
                         <div className='flex justify-center py-8 text-center'>
-                            <div className="w-full md:w-1/3 justify-center">
+                            <div className="place w-full md:w-1/3 justify-center">
                                 <div className="inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none">
                                     <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg" alt="step 3" className="object-scale-down w-5 h-5 fill-current text-white"/>
                                 </div>
                                 <h3>1st Place</h3>
                                 <p>Rp 7.000.000</p>
                             </div>
-                            <div className="w-full md:w-1/3">
+                            <div className="place w-full md:w-1/3">
                                 <div className="inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none">
                                     <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg" alt="step 3" className="object-scale-down w-5 h-5 fill-current text-white"/>
                                 </div>
                                 <h3>2nd Place</h3>
                                 <p>Rp 5.000.000</p>
                             </div>
-                            <div className="w-full md:w-1/3">
+                            <div className="place w-full md:w-1/3">
                                 <div className="inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none">
                                     <img src="https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg" alt="step 3" className="object-scale-down w-5 h-5 fill-current text-white"/>
                                 </div>
