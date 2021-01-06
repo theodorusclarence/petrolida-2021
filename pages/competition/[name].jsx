@@ -3,8 +3,9 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Head from 'next/head';
 import Button from '../../components/Button';
+import { comps } from '../../store/data';
 
-export default function Competition() {
+export default function Competition({ comp }) {
     const router = useRouter();
     const { name } = router.query;
 
@@ -306,4 +307,22 @@ export default function Competition() {
             </div>
         </>
     );
+}
+
+export async function getStaticProps({ params }) {
+    const comp = comps.find((comp) => comp.route === params.name);
+
+    return {
+        props: { comp },
+    };
+}
+
+export async function getStaticPaths() {
+    // Get the paths we want to pre-render based on posts
+    const paths = comps.map((comp) => ({
+        params: { name: comp.route },
+    }));
+
+    // fallback false means that all the other route will be blocked
+    return { paths, fallback: false };
 }

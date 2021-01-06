@@ -1,42 +1,100 @@
-import Head from 'next/head';
+import { useEffect } from 'react';
 import Button from '../components/Button';
-import Card from '../components/Card';
 import Comps from '../components/Comps';
+import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import NonComps from '../components/NonComps';
-import styles from '../styles/Home.module.css';
+import Seo from '../components/Seo';
+import gsap, { Power3 } from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+    useEffect(() => {
+        gsap.to('.hero', { css: { visibility: 'visible' } });
+        gsap.timeline().from(
+            '.hero',
+            {
+                opacity: 0,
+                y: 50,
+                stagger: 0.1,
+                ease: Power3.easeOut,
+            },
+            '+=0.5'
+        );
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#petrolida',
+                start: 'top 30%',
+            },
+        })
+            .from('.left', {
+                opacity: 0,
+                duration: 1,
+                x: -100,
+                ease: Power3.easeOut,
+            })
+            .from(
+                '.right',
+                {
+                    opacity: 0,
+                    x: 100,
+                    duration: 1,
+                    ease: Power3.easeOut,
+                },
+                '-=1'
+            );
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#recap',
+                start: 'top 25%',
+            },
+        }).from('.recap', {
+            opacity: 0,
+            duration: 1,
+            y: 100,
+            ease: Power3.easeOut,
+        });
+    }, []);
     return (
         <>
-            <Head>
+            <Seo>
                 <title>Petrolida 2021</title>
-                <link rel='icon' href='/favicon.ico' />
-            </Head>
-
+            </Seo>
             <Navbar />
             <div>
                 <section
-                    className='p-8 bg-gray-300 py-52 flex flex-col justify-center items-center'
+                    id='hero'
+                    className='p-8 bg-gray-300 py-52 min-h-screen flex flex-col justify-center items-center'
                     style={{
-                        backgroundImage: 'url("/img/bg-hero.png")',
+                        backgroundImage: 'url("/img/bg-hero.jpg")',
                         backgroundSize: 'cover',
                     }}
                 >
                     <main className='container'>
                         <img
-                            className='mx-auto w-full max-w-lg'
+                            className='hero mx-auto w-full max-w-lg'
                             src='/img/logo_hero.png'
                             alt='Logo Petrolida'
                         />
-                        <blockquote className='text-center my-2 lg:text-lg'>
+                        <h1 style={{ display: 'none' }}>
+                            Petrolida ITS 2021, Petroleum Integrated Days
+                        </h1>
+                        <blockquote className='hero text-center my-2 lg:text-lg'>
                             Generating Efficient Utilization of Energy Supplies Through Advanced
                             Technology
                         </blockquote>
-                        <div className='flex justify-center button-group'>
+                        <div className='hero flex justify-center button-group'>
                             <Button
                                 href=''
-                                onClick={() => window.scrollTo({ top: 700, behavior: 'smooth' })}
+                                onClick={() =>
+                                    window.scrollTo({
+                                        top: window.innerHeight,
+                                        behavior: 'smooth',
+                                    })
+                                }
                             >
                                 Learn More
                             </Button>
@@ -88,7 +146,7 @@ export default function Home() {
                     </main>
                 </section>
 
-                <section id='non-comp' className='py-20 text-center'>
+                <section id='non-competition' className='py-20 text-center'>
                     <main className='container'>
                         <h2 className='mb-8'>Non-Competition Events</h2>
                         <NonComps />
@@ -99,7 +157,7 @@ export default function Home() {
                     id='competition'
                     className='py-20 text-center'
                     style={{
-                        backgroundImage: 'url("/img/bg-comp.png")',
+                        backgroundImage: 'url("/img/bg-comp.jpg")',
                         backgroundSize: 'cover',
                     }}
                 >
@@ -108,7 +166,36 @@ export default function Home() {
                         <Comps />
                     </main>
                 </section>
+
+                <section id='recap' className='py-20 text-center'>
+                    <main className='container'>
+                        <h2 className='mb-8'>Our Last Recap</h2>
+                        <figure className='recap md:mx-24'>
+                            <div className='relative w-full h-auto overflow-hidden aspect'>
+                                <iframe
+                                    className='absolute top-0 left-0 right-0 bottom-0'
+                                    width='100%'
+                                    height='100%'
+                                    src='https://www.youtube.com/embed/ZH6dq3dcgCk'
+                                    frameBorder='0'
+                                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </figure>
+                    </main>
+                </section>
+                <style jsx>{`
+                    .aspect {
+                        padding-top: 56.25%;
+                    }
+
+                    .hero {
+                        visibility: hidden;
+                    }
+                `}</style>
             </div>
+            <Footer />
         </>
     );
 }

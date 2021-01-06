@@ -1,6 +1,25 @@
 import Card from './Card';
+import gsap, { Power3 } from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { useEffect } from 'react';
+gsap.registerPlugin(ScrollTrigger);
 
-export default function Comps() {
+export default function Comps({ register }) {
+    useEffect(() => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#competition',
+                start: 'top 10%',
+            },
+        }).from('.card-comp', {
+            opacity: 0,
+            duration: 1,
+            y: 100,
+            stagger: 0.1,
+            ease: Power3.easeOut,
+        });
+    }, []);
+
     const comps = [
         {
             route: 'oil-rig-design-competition',
@@ -42,7 +61,7 @@ export default function Comps() {
     return (
         <div className='comps-group grid md:grid-cols-3 gap-4 justify-center md:justify-around md:mx-16'>
             {comps.map(({ route, img, text }) => (
-                <Card key={route} img={img} text={text} route={route} />
+                <Card register={register} key={route} img={img} text={text} route={route} />
             ))}
         </div>
     );
