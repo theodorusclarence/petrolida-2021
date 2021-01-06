@@ -1,32 +1,21 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagramSquare, faLine, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export default function Footer() {
     return (
         <footer className='bg-primary py-4 flex items-center flex-col flow-content'>
-            <div className='flex text-white'>
+            <div className='flex text-white space-x-4'>
                 <a
                     href='https://lin.ee/7vNwVR8'
                     title='Add our official line'
                     target='_blank'
                     rel='noopener noreferer'
                 >
-                    <FontAwesomeIcon
-                        className='mx-2  hover:text-gray-200'
-                        icon={faLine}
-                        size='2x'
-                    />
+                    <img className='w-8' src='/img/line.svg' alt='Line' />
                 </a>
                 <a
                     href='https://www.linkedin.com/company/petroleum-integrated-days-petrolida/'
                     target='_blank'
                     rel='noopener noreferer'
                 >
-                    <FontAwesomeIcon
-                        title='Our LinkedIn'
-                        className='mx-2 hover:text-gray-200'
-                        icon={faLinkedin}
-                        size='2x'
-                    />
+                    <img className='w-8' src='/img/linkedin.svg' alt='Linkedin' />
                 </a>
                 <a
                     href='https://www.instagram.com/petrolida2021/'
@@ -34,11 +23,7 @@ export default function Footer() {
                     target='_blank'
                     rel='noopener noreferer'
                 >
-                    <FontAwesomeIcon
-                        className='mx-2 hover:text-gray-200'
-                        icon={faInstagramSquare}
-                        size='2x'
-                    />
+                    <img className='w-8' src='/img/ig.svg' alt='Instagram' />
                 </a>
             </div>
             <a
