@@ -46,10 +46,16 @@ export default function NonCompetition({ noncomp }) {
                 '-=1.5'
             );
     }, []);
+
+    const seoData = {
+        pageTitle: `${noncomp.title} | Petrolida 2021`,
+        img: noncomp.img,
+    };
+
     return (
         <>
-            <Seo>
-                <title>{noncomp.title} | Petrolida 2021</title>
+            <Seo seoData={seoData}>
+                <title>{seoData.pageTitle}</title>
             </Seo>
             <Navbar />
             <div>
