@@ -1,6 +1,25 @@
 import Card from './Card';
+import gsap, { Power3 } from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { useEffect } from 'react';
+gsap.registerPlugin(ScrollTrigger);
 
 export default function NonComps() {
+    useEffect(() => {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#non-competition',
+                start: 'top 50%',
+            },
+        }).from('.card-non', {
+            opacity: 0,
+            duration: 1,
+            y: 100,
+            stagger: 0.1,
+            ease: Power3.easeOut,
+        });
+    }, []);
+
     const noncomps = [
         {
             route: 'petrolida-talks',
