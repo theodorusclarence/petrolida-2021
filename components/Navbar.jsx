@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import Button from './Button';
+import { useRouter } from 'next/router';
 
-export default function Navbar() {
+export default function Navbar({ comp }) {
+    const router = useRouter();
     return (
         <div className='sticky top-0 z-50 bg-white flex justify-between items-center py-2 px-2 lg:px-4 shadow-md'>
             <Link href='/'>
@@ -14,7 +16,18 @@ export default function Navbar() {
                 <Button outline href='/' nav>
                     Home
                 </Button>
-                <Button outline href='/#competition' nav>
+                <Button
+                    outline
+                    href=''
+                    nav
+                    onClick={(e) => {
+                        e.preventDefault();
+                        if (comp?.current) {
+                            return comp.current.scrollIntoView({ behavior: 'smooth' });
+                        }
+                        router.push('/#competition');
+                    }}
+                >
                     Competitions
                 </Button>
                 <Button href='/register'>Register</Button>
