@@ -1,6 +1,8 @@
 import Head from 'next/head';
 
 export default function Seo({ children, seoData }) {
+    // TODO change this!
+    const publicURL = 'https://petrolida-2021.vercel.app';
     return (
         <Head>
             {children}
@@ -8,7 +10,10 @@ export default function Seo({ children, seoData }) {
             <meta property='og:type' content='event' />
             <meta property='og:url' content='https://petrolida.its.ac.id' />
             <meta property='og:description' content='Petroleum Integrated Days by SPE ITS SC' />
-            <meta property='og:image' content={`%PUBLIC_URL%/img/${seoData?.img || 'ograph'}.jpg`} />
+            <meta
+                property='og:image'
+                content={`${publicURL}/img/${seoData?.img || 'ograph'}.jpg`}
+            />
             <meta name='description' content='Petroleum Integrated Days by SPE ITS SC' />
             <link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
             <link rel='icon' type='image/png' sizes='32x32' href='/favicon/favicon-32x32.png' />
