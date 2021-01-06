@@ -26,7 +26,7 @@ export default function Competition({ comp }) {
                 <section
                     className='py-52'
                     style={{
-                        backgroundImage: 'url("/img/bg-hero.png")',
+                        backgroundImage: 'url("/img/bg-hero.jpg")',
                         backgroundSize: 'cover',
                     }}
                 >
@@ -290,7 +290,7 @@ export default function Competition({ comp }) {
                     id="register"
                     className='p-8 bg-gray-300 py-24 flex flex-col justify-center items-center'
                     style={{
-                        backgroundImage: 'url("/img/bg-hero.png")',
+                        backgroundImage: 'url("/img/bg-hero.jpg")',
                         backgroundSize: 'cover',
                     }}
                 >
