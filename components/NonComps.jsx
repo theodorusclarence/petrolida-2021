@@ -23,17 +23,17 @@ export default function NonComps() {
     const noncomps = [
         {
             route: 'petrolida-talks',
-            img: 'petrotalk',
+            img: 'pt',
             text: 'Petrolida Talks 2021',
         },
         {
             route: 'city-tour',
-            img: 'citytour',
+            img: 'ct',
             text: 'City Tour',
         },
         {
             route: 'gala-dinner',
-            img: 'galdin',
+            img: 'gd',
             text: 'Gala Dinner',
         },
     ];

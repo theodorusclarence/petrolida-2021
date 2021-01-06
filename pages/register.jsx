@@ -7,7 +7,7 @@ export default function Register() {
     return (
         <>
             <Head>
-                <title>Petrolida 2021</title>
+                <title>Register | Petrolida 2021</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 

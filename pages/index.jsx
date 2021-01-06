@@ -146,7 +146,7 @@ export default function Home() {
                                     students to explore and disclose their innovation regarding
                                     today’s energy challenges through providing them a chance to
                                     achieve substantial and competitive experiences to advance their
-                                    excel lence.
+                                    excellence.
                                 </p>
                             </div>
                             <img
