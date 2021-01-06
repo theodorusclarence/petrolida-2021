@@ -10,6 +10,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+    const petrol = useRef(null);
     const comp = useRef(null);
     useEffect(() => {
         gsap.to('.hero', { css: { visibility: 'visible' } });
@@ -90,13 +91,17 @@ export default function Home() {
                         </blockquote>
                         <div className='hero flex justify-center button-group'>
                             <Button
-                                href=''
+                                href='#'
                                 onClick={(e) => {
                                     e.preventDefault();
-                                    window.scrollTo({
-                                        top: window.innerHeight,
+                                    petrol?.current.scrollIntoView({
                                         behavior: 'smooth',
                                     });
+
+                                    // window.scrollTo({
+                                    //     top: window.innerHeight,
+                                    //     behavior: 'smooth',
+                                    // });
                                 }}
                             >
                                 Learn More
@@ -108,7 +113,11 @@ export default function Home() {
                     </main>
                 </section>
 
-                <section id='petrolida' className='bg-primary py-24 text-white'>
+                <section
+                    id='petrolida'
+                    ref={petrol}
+                    className='overflow-hidden bg-primary py-24 text-white'
+                >
                     <main className='container'>
                         <div className='mb-16 flex flex-col md:flex-row justify-center items-center'>
                             <div className='left md:text-right'>
