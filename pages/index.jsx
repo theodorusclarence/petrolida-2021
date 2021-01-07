@@ -106,7 +106,7 @@ export default function Home() {
                             >
                                 Learn More
                             </Button>
-                            <Button href='/' outline>
+                            <Button href='/register' outline>
                                 Register Now
                             </Button>
                         </div>

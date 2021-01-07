@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Button from '../components/Button';
-import Comps from '../components/Comps';
-import Navbar from '../components/Navbar';
+import Button from '../../components/Button';
+import Comps from '../../components/Comps';
+import Navbar from '../../components/Navbar';
 
 export default function Register() {
     return (

@@ -44,11 +44,12 @@ export default function Register({ reg }) {
             <div>
                 {/* Hero Section */}
                 <section
-                    className='bg-gray-300 flex items-center min-h-screen'
+                    className='bg-gray-300 flex items-center'
                     style={{
                         backgroundImage: `url("/img/bg-${reg.img}.jpg")`,
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',
+                        minHeight: '40vh'
                     }}
                 >
                     <main className='container'>
@@ -87,6 +88,24 @@ export default function Register({ reg }) {
                     </main>
                 </section>
                 {/* End of Hero Section */}
+
+                <section className='py-24'>
+                    <main className="container flex items-center">
+                    <iframe className='gform h-96' src="https://docs.google.com/forms/d/e/1FAIpQLSf80BGFdjffgznHSIuMnVu5z5ODcb3nvK836qEvp5rDStWLXw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </main>
+                    <style jsx>{`
+                        .gform {
+                            height: 5000px;
+                        }
+
+                        @media (min-width: 800px ) {
+                            .gform {
+                                height: 4400px;
+                            }
+                        }
+                    `}</style>
+                </section>
+
                 <Footer/>
             </div>
         </>

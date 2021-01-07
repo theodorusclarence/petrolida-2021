@@ -392,9 +392,10 @@ export default function Competition({ comp }) {
                             So, what are you waiting for?
                         </h2>
                         <div className='register-right flex justify-center button-group'>
-                            <Button href='/' outline>
+                            {comp.img === 'bcc' ?(<a href='https://forms.gle/KPTZouYjzCfZyLtV9' target='_blank' rel='noreferer noopener'>Register Now</a>) :(<Button href='/' outline>
                                 Register Now
-                            </Button>
+                            </Button>)}
+                            
                         </div>
                     </main>
                 </section>
