@@ -107,16 +107,14 @@ export default function NonCompetition({ noncomp }) {
 
                 {/* About Section */}
                 <section id='about' className='py-24 text-primary overflow-hidden'>
-                    <main className='container'>
-                        <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
-                            About The Event
-                        </h2>
-                        <div className='mb-4 flex flex-col-reverse md:flex-row justify-center items-center'>
+                    <main className='container space-y-8'>
+                        <h2 className='text-center text-primary'>About The Event</h2>
+                        <div className='flex flex-col-reverse md:flex-row justify-center items-center md:transform md:translate-x-12'>
                             <div className='left md:text-left'>
-                                <p className='mb-4 md:max-w-md '>{noncomp.desc}</p>
+                                <p className='md:max-w-md '>{noncomp.desc}</p>
                             </div>
                             <img
-                                className='right mb-4 mx-auto md:mx-0 max-h-44 md:max-h-64'
+                                className='mb-8 md:mb-0  right mx-auto md:mx-0 max-h-44 md:max-h-64'
                                 src='/img/what.png'
                                 alt='illus'
                             />
