@@ -113,15 +113,11 @@ export default function Home() {
                     </main>
                 </section>
 
-                <section
-                    id='petrolida'
-                    ref={petrol}
-                    className='overflow-hidden bg-primary py-24 text-white'
-                >
-                    <main className='container'>
+                <section id='petrolida' ref={petrol} className='overflow-hidden bg-primary py-24'>
+                    <main className='container white-im'>
                         <div className='mb-16 flex flex-col md:flex-row justify-center items-center'>
                             <div className='left md:text-right'>
-                                <h3 className=' text-white my-4 md:translate-x-1/2'>
+                                <h3 className='white-im my-4 md:translate-x-1/2'>
                                     What Is Petrolida
                                 </h3>
                                 <p className='mb-4 md:ml-auto md:max-w-md'>
@@ -140,7 +136,7 @@ export default function Home() {
                         </div>
                         <div className=' flex flex-col md:flex-row-reverse justify-center items-center'>
                             <div className='right md:ml-4 md:mr-auto'>
-                                <h3 className='text-white my-4'>Petrolida's Goal</h3>
+                                <h3 className='white-im my-4'>Petrolida's Goal</h3>
                                 <p className='mb-4 md:max-w-md'>
                                     Petrolida 2021 aims to serve as a platform for university
                                     students to explore and disclose their innovation regarding
@@ -189,6 +185,7 @@ export default function Home() {
                                     className='absolute top-0 left-0 right-0 bottom-0'
                                     width='100%'
                                     height='100%'
+                                    title='Recap'
                                     src='https://www.youtube-nocookie.com/embed/SDeXDzWaFd8'
                                     frameBorder='0'
                                     allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -206,6 +203,10 @@ export default function Home() {
                     .hero,
                     #petrolida {
                         visibility: hidden;
+                    }
+
+                    .white-im {
+                        color: white;
                     }
                 `}</style>
             </div>
