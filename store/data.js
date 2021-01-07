@@ -77,3 +77,49 @@ export const noncomps = [
             'Gala dinner is a night of celebration to mark the finale of Petrolida 2021. Alongside with entertainments and exquisite dining, it is the perfect opportunity to engage and strengthen the relationship between the sponsors, judges, participants, and event committee. We also recognize the achievements of fellow participants and excellence of our competition winners by awarding them. All in all, gala dinner is a one night to remember.',
     },
 ];
+
+export const regis = [
+    {
+        route: 'oil-rig-design-competition',
+        title: 'Oil Rig Design Competition Form',
+        quote: 'This is quote about competition',
+        img: 'ordc',
+    },
+    {
+        route: 'fracturing-fluid-design-competition',
+        title: 'Fracturing Fluid Design Competition Form',
+        quote: 'This is quote about competition',
+        img: 'ffdc',
+    },
+
+    {
+        route: 'stock-trading-competition',
+        title: 'Stock Trading Competition Form',
+        quote: 'This is quote about competition',
+        img: 'stc',
+    },
+    {
+        route: 'petrosmart-competition',
+        title: 'Petrosmart Competition Form',
+        quote: 'This is quote about competition',
+        img: 'psc',
+    },
+    {
+        route: 'case-study-competition',
+        title: 'Case Study Competition Form',
+        quote: 'This is quote about competition',
+        img: 'csc',
+    },
+    {
+        route: 'paper-competition',
+        title: 'Paper Competition Form',
+        quote: 'This is quote about competition',
+        img: 'pc',
+    },
+    {
+        route: 'business-case-competition',
+        title: 'Business Case Competition Form',
+        quote: 'Adapting to Consumer Behaviour During a Time of Crisis',
+        img: 'bcc',
+    },
+];

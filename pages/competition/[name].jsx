@@ -157,10 +157,10 @@ export default function Competition({ comp }) {
                 {/* About Section */}
                 <section id='about' className='py-24 text-primary overflow-hidden'>
                     <main className='container'>
-                        <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
+                        <h2 className='text-center text-primary pb-16'>
                             About The Competition
                         </h2>
-                        <div className='mb-4 flex flex-col-reverse md:flex-row justify-center items-center'>
+                        <div className='mb-4 flex flex-col-reverse md:flex-row justify-center items-center md:transform md:translate-x-12'>
                             <div className='about-left md:text-left'>
                                 <p className='mb-4 md:max-w-md '>
                                     {comp.about}
