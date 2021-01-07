@@ -155,7 +155,7 @@ export default function Competition({ comp }) {
                 {/* End of Hero Section */}
 
                 {/* About Section */}
-                <section id='about' className='py-24 text-primary'>
+                <section id='about' className='py-24 text-primary overflow-hidden'>
                     <main className='container'>
                         <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
                             About The Competition
@@ -381,7 +381,7 @@ export default function Competition({ comp }) {
                 {/* Register Section */}
                 <section
                     id="register"
-                    className='p-8 bg-gray-300 py-24 flex flex-col justify-center items-center'
+                    className='p-8 bg-gray-300 py-24 flex flex-col justify-center items-center overflow-hidden'
                     style={{
                         backgroundImage: 'url("/img/bg-hero.jpg")',
                         backgroundSize: 'cover',
@@ -389,7 +389,7 @@ export default function Competition({ comp }) {
                 >
                     <main className='container'>
                         <h2 className='register-left text-center text-primary pb-16 md:translate-x-1/2'>
-                            So, what are you wating for?
+                            So, what are you waiting for?
                         </h2>
                         <div className='register-right flex justify-center button-group'>
                             <Button href='/' outline>
