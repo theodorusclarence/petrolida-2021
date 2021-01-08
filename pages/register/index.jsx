@@ -1,50 +1,26 @@
-import Head from 'next/head';
-import Button from '../../components/Button';
 import Comps from '../../components/Comps';
+import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import Seo from '../../components/Seo';
 
 export default function Register() {
+    const seoData = {
+        pageTitle: 'Register | Petrolida 2021',
+    };
     return (
         <>
-            <Head>
-                <title>Register | Petrolida 2021</title>
-            </Head>
-
+            <Seo seoData={seoData}>
+                <title>{seoData.pageTitle}</title>
+            </Seo>
             <Navbar />
             <div>
-                {/* <section
-                    id=''
-                    className='p-8 bg-gray-300 py-52 min-h-screen flex flex-col justify-center items-center'
-                    style={{
-                        backgroundImage: 'url("/img/bg-hero.jpg")',
-                        backgroundSize: 'cover',
-                    }}
-                >
-                    <main className='container'>
-                        <img
-                            className='mx-auto w-full max-w-lg'
-                            src='/img/logo_hero.png'
-                            alt='Logo Petrolida'
-                        />
-                        <blockquote className='text-center my-2 lg:text-lg'>
-                            Generating Efficient Utilization of Energy Supplies Through Advanced
-                            Technology
-                        </blockquote>
-                        <div className='flex justify-center button-group'>
-                            <Button href='#petrolida'>Learn More</Button>
-                            <Button href='/' outline>
-                                Register Now
-                            </Button>
-                        </div>
-                    </main>
-                </section> */}
-
                 <section
                     id='competition'
                     className='py-20 text-center'
                     style={{
                         backgroundImage: 'url("/img/bg-reg.jpg")',
                         backgroundSize: 'cover',
+                        backgroundPosition: 'center center',
                     }}
                 >
                     <main className='container'>
@@ -52,6 +28,7 @@ export default function Register() {
                         <Comps register />
                     </main>
                 </section>
+                <Footer />
             </div>
         </>
     );

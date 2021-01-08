@@ -6,6 +6,7 @@ import gsap, { Power3 } from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect } from 'react';
 import { useRef } from 'react';
+import Footer from '../../components/Footer';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function NonCompetition({ noncomp }) {
@@ -133,6 +134,7 @@ export default function NonCompetition({ noncomp }) {
                     </main>
                 </section>
                 {/* End of About Section */}
+                <Footer />
                 <style jsx>{`
                     .aspect {
                         padding-top: 56.25%;
