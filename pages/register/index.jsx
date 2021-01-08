@@ -8,7 +8,6 @@ export default function Register() {
         <>
             <Head>
                 <title>Register | Petrolida 2021</title>
-                <link rel='icon' href='/favicon.ico' />
             </Head>
 
             <Navbar />
@@ -44,7 +43,7 @@ export default function Register() {
                     id='competition'
                     className='py-20 text-center'
                     style={{
-                        backgroundImage: 'url("/img/bg-comp.jpg")',
+                        backgroundImage: 'url("/img/bg-reg.jpg")',
                         backgroundSize: 'cover',
                     }}
                 >

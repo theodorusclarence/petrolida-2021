@@ -12,6 +12,7 @@ export default function Footer() {
                 </a>
                 <a
                     href='https://www.linkedin.com/company/petroleum-integrated-days-petrolida/'
+                    title='Our LinkedIn'
                     target='_blank'
                     rel='noopener noreferer'
                 >

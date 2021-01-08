@@ -18,7 +18,7 @@ export default function Navbar({ comp }) {
                 </Button>
                 <Button
                     outline
-                    href=''
+                    href='#'
                     nav
                     onClick={(e) => {
                         e.preventDefault();

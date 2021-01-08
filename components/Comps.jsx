@@ -9,7 +9,7 @@ export default function Comps({ register }) {
         gsap.timeline({
             scrollTrigger: {
                 trigger: '#competition',
-                start: 'top 10%',
+                start: 'top 35%',
             },
         }).from('.card-comp', {
             opacity: 0,

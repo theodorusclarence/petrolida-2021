@@ -1,18 +1,13 @@
 import Navbar from '../../components/Navbar';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Seo from '../../components/Seo';
 import Footer from '../../components/Footer';
-import Button from '../../components/Button';
 import { regis } from '../../store/data';
 import gsap, { Power3 } from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Register({ reg }) {
-    const router = useRouter();
-    const { name } = router.query;
-
     useEffect(() => {
         gsap.to('.hero', { css: { visibility: 'visible' } });
 
@@ -49,7 +44,7 @@ export default function Register({ reg }) {
                         backgroundImage: `url("/img/bg-${reg.img}.jpg")`,
                         backgroundPosition: 'center center',
                         backgroundSize: 'cover',
-                        minHeight: '40vh'
+                        minHeight: '40vh',
                     }}
                 >
                     <main className='container'>
@@ -59,10 +54,8 @@ export default function Register({ reg }) {
                                 <blockquote className='hero mb-4 md:max-w-md'>
                                     {reg.quote}
                                 </blockquote>
-                                <div className='hero items-center space-x-4'>
-                                    <Button href='/'>
-                                        Guidebook
-                                    </Button>
+                                {/* <div className='hero items-center space-x-4'>
+                                    <Button href='/'>Guidebook</Button>
                                     <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-primary rounded-full hover:bg-hover'>
                                         <svg
                                             className='w-3 h-3 text-white'
@@ -77,28 +70,43 @@ export default function Register({ reg }) {
                                             />
                                         </svg>
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                             <img
-                                className='hero mx-auto md:mx-0'
+                                className='hero mx-auto md:mx-0  max-h-44 md:max-h-64'
                                 src={`/img/logo-${reg.img}.png`}
                                 alt='Illustrasi'
                             />
                         </div>
                     </main>
+                    <style jsx>{`
+                        .hero {
+                            visibility: hidden;
+                        }
+                    `}</style>
                 </section>
                 {/* End of Hero Section */}
 
                 <section className='py-24'>
-                    <main className="container flex items-center">
-                    <iframe className='gform h-96' src="https://docs.google.com/forms/d/e/1FAIpQLSf80BGFdjffgznHSIuMnVu5z5ODcb3nvK836qEvp5rDStWLXw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <main className='container flex items-center'>
+                        <iframe
+                            className='gform h-96'
+                            src='https://docs.google.com/forms/d/e/1FAIpQLSf80BGFdjffgznHSIuMnVu5z5ODcb3nvK836qEvp5rDStWLXw/viewform?embedded=true'
+                            width='100%'
+                            height='100%'
+                            frameBorder='0'
+                            marginHeight='0'
+                            marginWidth='0'
+                        >
+                            Loading…
+                        </iframe>
                     </main>
                     <style jsx>{`
                         .gform {
                             height: 5000px;
                         }
 
-                        @media (min-width: 800px ) {
+                        @media (min-width: 800px) {
                             .gform {
                                 height: 4400px;
                             }
@@ -106,7 +114,7 @@ export default function Register({ reg }) {
                     `}</style>
                 </section>
 
-                <Footer/>
+                <Footer />
             </div>
         </>
     );

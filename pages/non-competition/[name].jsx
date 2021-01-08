@@ -5,9 +5,11 @@ import Seo from '../../components/Seo';
 import gsap, { Power3 } from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect } from 'react';
+import { useRef } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function NonCompetition({ noncomp }) {
+    const about = useRef(null);
     useEffect(() => {
         gsap.to('.hero', { css: { visibility: 'visible' } });
         gsap.to('#about', { css: { visibility: 'visible' } });
@@ -76,10 +78,19 @@ export default function NonCompetition({ noncomp }) {
                                     {noncomp.theme}
                                 </blockquote>
                                 <div className='hero items-center space-x-4'>
-                                    <Button href='/' outline>
-                                        Guidebook
+                                    <Button
+                                        href='#'
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            about?.current.scrollIntoView({
+                                                behavior: 'smooth',
+                                            });
+                                        }}
+                                        outline
+                                    >
+                                        Learn More
                                     </Button>
-                                    <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-white rounded-full hover:bg-hover'>
+                                    {/* <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-white rounded-full hover:bg-hover'>
                                         <svg
                                             className='w-3 h-3 text-primary'
                                             xmlns='http://www.w3.org/2000/svg'
@@ -92,7 +103,7 @@ export default function NonCompetition({ noncomp }) {
                                                 clipRule='evenodd'
                                             />
                                         </svg>
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
                             <img
@@ -106,7 +117,7 @@ export default function NonCompetition({ noncomp }) {
                 {/* End of Hero Section */}
 
                 {/* About Section */}
-                <section id='about' className='py-24 text-primary overflow-hidden'>
+                <section id='about' ref={about} className='py-24 text-primary overflow-hidden'>
                     <main className='container space-y-8'>
                         <h2 className='text-center text-primary'>About The Event</h2>
                         <div className='flex flex-col-reverse md:flex-row justify-center items-center md:transform md:translate-x-12'>
