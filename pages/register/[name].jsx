@@ -91,7 +91,7 @@ export default function Register({ reg }) {
                     <main className='container flex items-center'>
                         <iframe
                             className='gform h-96'
-                            src='https://docs.google.com/forms/d/e/1FAIpQLSf80BGFdjffgznHSIuMnVu5z5ODcb3nvK836qEvp5rDStWLXw/viewform?embedded=true'
+                            src={`${reg.formsrc}`}
                             width='100%'
                             height='100%'
                             frameBorder='0'
@@ -103,12 +103,12 @@ export default function Register({ reg }) {
                     </main>
                     <style jsx>{`
                         .gform {
-                            height: 5000px;
+                            height: ${reg.formheightmobile}px;
                         }
 
                         @media (min-width: 800px) {
                             .gform {
-                                height: 4400px;
+                                height: ${reg.formheight}px;
                             }
                         }
                     `}</style>

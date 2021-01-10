@@ -426,7 +426,7 @@ export default function Competition({ comp }) {
                                     />
                                 </div>
                                 <h3>1st Place</h3>
-                                <p>Rp 7.000.000</p>
+                                <p>Rp {comp.prize1}</p>
                             </div>
                             <div className='place w-full md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
@@ -437,7 +437,7 @@ export default function Competition({ comp }) {
                                     />
                                 </div>
                                 <h3>2nd Place</h3>
-                                <p>Rp 5.000.000</p>
+                                <p>Rp {comp.prize2}</p>
                             </div>
                             <div className='place w-full md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
@@ -448,7 +448,7 @@ export default function Competition({ comp }) {
                                     />
                                 </div>
                                 <h3>3rd Place</h3>
-                                <p>Rp 3.000.000</p>
+                                <p>Rp {comp.prize3}</p>
                             </div>
                         </div>
                     </main>
@@ -482,6 +482,16 @@ export default function Competition({ comp }) {
                     </main>
                 </section>
                 {/* End of Register Section */}
+
+                {/* CP  Section */}
+                <section id='cp' className='py-24 flex justify-center items-center'>
+                    <main className='container'>
+                        <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
+                            Contact Person
+                        </h2>
+                    </main>
+                </section>
+                {/* CP Section */}
 
                 <Footer />
                 <style jsx>{`
