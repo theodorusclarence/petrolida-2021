@@ -70,7 +70,7 @@ export const noncomps = [
         route: 'petrolida-talks',
         img: 'pt',
         title: 'Petrolida Talks 2021',
-        theme: 'Enriching your Knowledge in Entrepreneurship, Technology, and Energy Fields',
+        theme: 'Enriching Your Knowledge in Entrepreneurship, Technology, and Energy Fields',
         desc:
             'Petrolida Talk 2021 is a talkshow that brings a new concept adapting to the new normal era. This event will be filled with speakers who are experienced and experts in their fields to discuss some current and important topics. Unlike other talk shows, by carrying out the hybrid concept between online and offline talkshows, the participants still have the opportunity to exchange ideas with the speakers while implementing health protocols. This talkshow is open to the public as an event that can provide information and education so that they can get inspiration to create ideas and works.',
     },
@@ -86,7 +86,7 @@ export const noncomps = [
         route: 'gala-dinner',
         img: 'gd',
         title: 'Gala Dinner',
-        theme: 'Adapting to Consumer Behaviour During a Time of Crisis',
+        theme: 'An Extraordinary Night with a Show of the Future',
         desc:
             'Gala dinner is a night of celebration to mark the finale of Petrolida 2021. Alongside with entertainments and exquisite dining, it is the perfect opportunity to engage and strengthen the relationship between the sponsors, judges, participants, and event committee. We also recognize the achievements of fellow participants and excellence of our competition winners by awarding them. All in all, gala dinner is a one night to remember.',
     },
