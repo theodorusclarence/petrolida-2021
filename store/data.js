@@ -99,7 +99,7 @@ export const noncomps = [
         route: 'city-tour',
         img: 'ct',
         title: 'City Tour',
-        theme: 'Adapting to Consumer Behaviour During a Time of Crisis',
+        theme: 'Adapting to Consumer Behaviour During a Time of Crisis, City of Heroes, Endless Discoveries',
         desc:
             'City Tour is one one of the series of Petrolida 2021’s post events, aiming to let the participants unwind after the competition by exploring the beauty of the city of heroes, Surabaya. Aside from that, Petrolida’s City Tour is also a perfect moment to connect everyone from fellow participants to the rest of the Petrolida 2021 committee.',
     },
