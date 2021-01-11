@@ -10,6 +10,11 @@ export const comps = [
         prize1: '3.000.000',
         prize2: '2.000.000',
         prize3: '1.000.000',
+        cpname1: 'Muhammad Fadhlan Rafi',
+        cptitle1: 'Coordinator of Oil Rig Design Competition',
+        cpphone1: '081334753265',
+        cpline1: '-',
+        cpemail1: 'mfadhlanraffi@gmail.com',
     },
     {
         route: 'fracturing-fluid-design-competition',
@@ -22,6 +27,11 @@ export const comps = [
         prize1: '4.000.000',
         prize2: '2.500.000',
         prize3: '1.500.000',
+        cpname1: 'I Made Deago Nugra Visesa',
+        cptitle1: 'Coordinator of Fracturing Fluid Design Competition',
+        cpphone1: '087887730734',
+        cpline1: 'degesss',
+        cpemail1: 'madedeago18@gmail.com',
     },
 
     {
@@ -35,6 +45,11 @@ export const comps = [
         prize1: '3.500.000',
         prize2: '2.500.000',
         prize3: '1.500.000',
+        cpname1: 'Sultan Tanri Lammoreno',
+        cptitle1: '-',
+        cpphone1: '082233223453',
+        cpline1: '-',
+        cpemail1: 'lammorenos@gmail.com',
     },
     {
         route: 'petrosmart-competition',
@@ -47,6 +62,11 @@ export const comps = [
         prize1: '4.000.000',
         prize2: '2.500.000',
         prize3: '1.500.000',
+        cpname1: 'Benedictus Dicky Pradnya Agung Pramudhita',
+        cptitle1: 'Coordinator of Petrosmart Competition Petrolida 2021',
+        cpphone1: '+628226080916',
+        cpline1: 'benedict_dpap',
+        cpemail1: 'benedictdpap@gmail.com',
     },
     {
         route: 'case-study-competition',
@@ -59,6 +79,11 @@ export const comps = [
         prize1: '3.500.000',
         prize2: '2.500.000',
         prize3: '1.500.000',
+        cpname1: 'Muhammad Dadik Aminnanda',
+        cptitle1: 'Project Officer of Case Study Competition',
+        cpphone1: '+6281358865329',
+        cpline1: 'dadik123',
+        cpemail1: 'dadikkidad@gmail.com',
     },
     {
         route: 'paper-competition',
@@ -71,6 +96,11 @@ export const comps = [
         prize1: '3.000.000',
         prize2: '2.500.000',
         prize3: '1.500.000',
+        cpname1: 'Adisya Salsabila',
+        cptitle1: '-',
+        cpphone1: '(+62)87722880485',
+        cpline1: '-',
+        cpemail1: 'adisyasaz@gmail.com',
     },
     {
         route: 'business-case-competition',
@@ -83,6 +113,11 @@ export const comps = [
         prize1: '7.000.000',
         prize2: '5.000.000',
         prize3: '3.000.000',
+        cpname1: 'Ilham Fadhillah',
+        cptitle1: 'Coordinator of Business Case Competition',
+        cpphone1: '085710083134',
+        cpline1: 'ilham4',
+        cpemail1: 'ilhamfadhillah4@gmail.com',
     },
 ];
 

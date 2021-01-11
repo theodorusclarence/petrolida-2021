@@ -494,17 +494,17 @@ export default function Competition({ comp }) {
                                 <img className="w-12 h-12 rounded-full object-cover mr-4 shadow fill-current" src="/img/people.svg" alt="avatar"></img>
                                 <div className="">
                                     <div className="flex items-center justify-between">
-                                        <h2 className="text-lg font-semibold text-gray-900 -mt-1">Ilham Fadhillah</h2>
+                                        <h2 className="text-lg font-semibold text-gray-900 -mt-1">{comp.cpname1}</h2>
                                     </div>
-                                    <p className="text-gray-700 font-medium">Coordinator of Business Case Competition</p>
+                                    <p className="text-gray-700 font-medium">{comp.cptitle1}</p>
                                     <p className="mt-3 text-gray-700 text-sm">
-                                        Phone Number : 085710083134
+                                        Phone Number : {comp.cpphone1}
                                     </p>
                                     <p className="mt-3 text-gray-700 text-sm">
-                                        Line ID : ilham4
+                                        Line ID : {comp.cpline1}
                                     </p>
                                     <p className="mt-3 text-gray-700 text-sm">
-                                        Email : ilhamfadhillah4@gmail.com
+                                        Email : {comp.cpemail1}
                                     </p>
                                 </div>
                             </div>
