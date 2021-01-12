@@ -23,6 +23,17 @@ export default function Seo({ children, seoData }) {
             <meta name='msapplication-TileColor' content='#da532c' />
             <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
             <meta name='theme-color' content='#ffffff'></meta>
+            <script async src='https://www.googletagmanager.com/gtag/js?id=G-XW8MVPBCD3'></script>
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: `
+    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-XW8MVPBCD3');
+    `,
+                }}
+            ></script>
         </Head>
     );
 }
