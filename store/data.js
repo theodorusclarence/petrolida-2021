@@ -118,6 +118,8 @@ export const comps = [
         cpphone1: '085710083134',
         cpline1: 'ilham4',
         cpemail1: 'ilhamfadhillah4@gmail.com',
+        keydates: [{name: 'Registration', 
+        content: ['Open Regist : 28 December 2020','Deadline : 13 January 2021']}],
         step1name: 'Registration',
         step2name: 'Preliminary',
         step3name: 'Semifinal',
