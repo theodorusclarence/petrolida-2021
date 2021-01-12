@@ -51,9 +51,7 @@ export default function Register({ reg }) {
                         <div className='mb-16 md:mb-0 flex flex-col-reverse md:flex-row justify-center items-center'>
                             <div className='w-full md:ml-12 md:text-left text-primary'>
                                 <h1 className='hero my-4 text-primary'>{reg.title}</h1>
-                                <blockquote className='hero mb-4 md:max-w-md'>
-                                    {reg.quote}
-                                </blockquote>
+                                <blockquote className='hero mb-4'>{reg.quote}</blockquote>
                                 {/* <div className='hero items-center space-x-4'>
                                     <Button href='/'>Guidebook</Button>
                                     <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-primary rounded-full hover:bg-hover'>

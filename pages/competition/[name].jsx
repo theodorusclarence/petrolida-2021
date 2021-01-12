@@ -69,7 +69,7 @@ export default function Competition({ comp }) {
         }).from('.step', {
             opacity: 0,
             y: 50,
-            stagger: 0.3,
+            stagger: 0.2,
             ease: Power3.easeOut,
         });
 
@@ -95,6 +95,18 @@ export default function Competition({ comp }) {
                 },
                 '-=1.5'
             );
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#cp',
+                start: 'top 50%',
+            },
+        }).from('.cp-card', {
+            opacity: 0,
+            y: 50,
+            stagger: 0.1,
+            ease: Power3.easeOut,
+        });
     }, []);
 
     const seoData = {
@@ -139,9 +151,11 @@ export default function Competition({ comp }) {
                                     >
                                         Learn More
                                     </Button>
-                                    <NewTabBtn href={comp.guidebook} outline>
-                                        Guidebook
-                                    </NewTabBtn>
+                                    {comp.img === 'bcc' && (
+                                        <NewTabBtn href={comp.guidebook} outline>
+                                            Guidebook
+                                        </NewTabBtn>
+                                    )}
                                     {/* <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-primary rounded-full hover:bg-hover'>
                                         <svg
                                             className='w-3 h-3 text-white'
@@ -456,6 +470,19 @@ export default function Competition({ comp }) {
                                 <p>Rp {comp.prize3}</p>
                             </div>
                         </div>
+                        {comp.prize4 && (
+                            <div className='place w-full md:w-1/3 mx-auto text-center mt-4'>
+                                <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
+                                    <img
+                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        alt='step 3'
+                                        className='object-scale-down w-5 h-5 fill-current text-white'
+                                    />
+                                </div>
+                                <h3>Favorite Winner</h3>
+                                <p>Rp {comp.prize4}</p>
+                            </div>
+                        )}
                     </main>
                 </section>
                 {/* End of Prize Section */}
@@ -494,7 +521,7 @@ export default function Competition({ comp }) {
                         <h2 className='text-center text-primary'>Contact Person</h2>
                         <div className='flex items-center justify-center'>
                             <div
-                                className='shadow-md rounded-md p-8'
+                                className='cp-card shadow-md rounded-md p-8'
                                 style={{
                                     backgroundImage: 'url("/img/bg-hero.jpg")',
                                     backgroundSize: 'cover',

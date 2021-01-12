@@ -8,9 +8,10 @@ export const comps = [
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
             'Oil Rig Design Competition is a competition where the participants compete their knowledge and innovation on designing semi-submersible platforms with engineering sense to overcome the obstacles on the given field.',
-        prize1: '3.000.000',
-        prize2: '2.000.000',
+        prize1: '3.500.000',
+        prize2: '2.500.000',
         prize3: '1.000.000',
+        prize4: '500.000',
         cpname1: 'Muhammad Fadhlan Rafi',
         cptitle1: 'Coordinator of Oil Rig Design Competition',
         cpphone1: '081334753265',
@@ -62,9 +63,10 @@ export const comps = [
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
             'Fracture Fluid Design Competition is a competition in which students are challenged to create fracture fluid systems in laboratory scale by applying a series of chemical additives to enhance the productivity of a well according to the case. Participants are required to analyze the case given and present their solution in the form of paper. Then, participants must create a fracture fluid to correspond to the submitted paper and present both their paper and the fracture fluid to the judges.',
-        prize1: '4.000.000',
-        prize2: '2.500.000',
-        prize3: '1.500.000',
+        prize1: '3.000.000',
+        prize2: '2.000.000',
+        prize3: '1.000.000',
+        prize4: '500.000',
         cpname1: 'I Made Deago Nugra Visesa',
         cptitle1: 'Coordinator of Fracturing Fluid Design Competition',
         cpphone1: '087887730734',
@@ -93,7 +95,7 @@ export const comps = [
             {
                 name: 'Infographic & Presentation',
                 content: [
-                    'Technical Meeting & Simulation : 2 April 2021',
+                    'Technical Meeting & Simulation : 3 April 2021',
                     'PowerPoint File & Infographic Submission Deadline : 7 April 2021',
                 ],
             },
@@ -112,9 +114,9 @@ export const comps = [
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
             'Stock trading competition is a competition where participants trade with virtual money to obtain the highest capital gain. The aim of this competition is to increase the participants knowledge from online stock trading courses and to improve their analysis skills by presenting the stock analysis on a specific company.',
-        prize1: '3.500.000',
-        prize2: '2.500.000',
-        prize3: '1.500.000',
+        prize1: '3.000.000',
+        prize2: '2.000.000',
+        prize3: '1.000.000',
         cpname1: 'Sultan Tanri Lammoreno',
         cptitle1: 'Coordinator of Stock Trading Competition',
         cpphone1: '082233223453',
@@ -141,7 +143,7 @@ export const comps = [
                 name: 'Road to Final',
                 content: [
                     'Study Guide Release: 27 March 2021',
-                    'Technical Meeting: 2 April 2021',
+                    'Technical Meeting: 3 April 2021',
                     'Paper Submission: 7 April 2021',
                 ],
             },
@@ -159,9 +161,9 @@ export const comps = [
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
             'Petrosmart Competition is a quick-fire rounds competition where teams from various universities compete against one another to challenge their knowledge by answering questions covering technical and non-technical aspects of the oil and gas industry.',
-        prize1: '4.000.000',
-        prize2: '2.500.000',
-        prize3: '1.500.000',
+        prize1: '3.000.000',
+        prize2: '2.000.000',
+        prize3: '1.000.000',
         cpname1: 'Benedictus Dicky Pradnya Agung Pramudhita',
         cptitle1: 'Coordinator of Petrosmart Competition',
         cpphone1: '+628226080916',
@@ -186,7 +188,7 @@ export const comps = [
             },
             {
                 name: 'Technical Meeting',
-                content: ['Technical Meeting : 2nd April 2021'],
+                content: ['Technical Meeting : 3 April 2021'],
             },
             {
                 name: 'Competition Day',
@@ -203,9 +205,9 @@ export const comps = [
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
             'Case Study analysis requires participants to examine a specific case, provide several alternative solutions and propose the most effective solution using in-depth data and quantitative evidence.',
-        prize1: '3.500.000',
-        prize2: '2.500.000',
-        prize3: '1.500.000',
+        prize1: '3.000.000',
+        prize2: '2.000.000',
+        prize3: '1.000.000',
         cpname1: 'Muhammad Dadik Aminnanda',
         cptitle1: 'Coordinator of Case Study Competition',
         cpphone1: '+6281358865329',
@@ -230,7 +232,7 @@ export const comps = [
             {
                 name: 'Pre-Final Stage',
                 content: [
-                    'Tech Meet: 3 April 2031',
+                    'Technical Meet: 3 April 2021',
                     'Solution Report Submission Deadline: 7 April 2021',
                     'Presentation Submission Deadline: 7 April 2021',
                 ],
@@ -251,8 +253,8 @@ export const comps = [
         about:
             'Paper competition is an event where students get the opportunity to present their innovations and discoveries regarding oil and gas industries in the form of a scientific research paper.',
         prize1: '3.000.000',
-        prize2: '2.500.000',
-        prize3: '1.500.000',
+        prize2: '2.000.000',
+        prize3: '1.000.000',
         cpname1: 'Adisya Salsabila',
         cptitle1: 'Coordinator of Paper Competition',
         cpphone1: '(+62)87722880485',
@@ -262,27 +264,28 @@ export const comps = [
             {
                 name: 'Registration',
                 content: [
-                    'Open Registration : 28 December 2020',
+                    'Open Registration: 17 January 2021',
                     'Close Registration: 25 February 2021',
+                    'Payment Registration Deadline: 25 February 2021',
                 ],
             },
             {
                 name: 'Abstract Submission',
                 content: [
-                    'Working Time : 17 January 2021-26 February 2021',
-                    'Deadline Submission: 26-28 February 2021',
+                    'Working Time : 17 January 2021 - 26 February 2021',
+                    'Deadline Submission: 26 - 28 February 2021',
                 ],
             },
             {
                 name: 'Finalist Announcement',
-                content: [
-                    'Working Time : 17 January 2021-26 February 2021',
-                    'Deadline Submission: 26-28 February 2021',
-                ],
+                content: ['Finalist Announcement: 7 March 2021'],
             },
             {
                 name: 'Pre-Final Stage',
-                content: ['Finalist Announcement: 7 March 2021'],
+                content: [
+                    'Full Paper Submission: 7 April 2021',
+                    'Final Presentation Submission: 7 April 2021',
+                ],
             },
             {
                 name: 'Competition Day',
