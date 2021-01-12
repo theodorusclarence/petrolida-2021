@@ -283,7 +283,7 @@ export const comps = [
             {
                 name: 'Pre-Final Stage',
                 content: [
-                    'Technical Meeting: 3 April 2031',
+                    'Technical Meeting: 3 April 2021',
                     'Full Paper Submission: 7 April 2021',
                     'Final Presentation Submission: 7 April 2021',
                 ],
