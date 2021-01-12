@@ -14,7 +14,7 @@ export const comps = [
         cptitle1: 'Coordinator of Oil Rig Design Competition',
         cpphone1: '081334753265',
         cpline1: '-',
-        cpemail1: 'mfadhlanraffi@gmail.com',
+        cpemail1: 'ordc.petrolida@gmail.com',
     },
     {
         route: 'fracturing-fluid-design-competition',
@@ -31,7 +31,7 @@ export const comps = [
         cptitle1: 'Coordinator of Fracturing Fluid Design Competition',
         cpphone1: '087887730734',
         cpline1: 'degesss',
-        cpemail1: 'madedeago18@gmail.com',
+        cpemail1: 'ffdc.petrolida@gmail.com',
     },
 
     {
@@ -49,7 +49,7 @@ export const comps = [
         cptitle1: '-',
         cpphone1: '082233223453',
         cpline1: '-',
-        cpemail1: 'lammorenos@gmail.com',
+        cpemail1: 'stc.petrolida@gmail.com',
     },
     {
         route: 'petrosmart-competition',
@@ -66,7 +66,7 @@ export const comps = [
         cptitle1: 'Coordinator of Petrosmart Competition Petrolida 2021',
         cpphone1: '+628226080916',
         cpline1: 'benedict_dpap',
-        cpemail1: 'benedictdpap@gmail.com',
+        cpemail1: 'psc.petrolida@gmail.com',
     },
     {
         route: 'case-study-competition',
@@ -83,7 +83,7 @@ export const comps = [
         cptitle1: 'Project Officer of Case Study Competition',
         cpphone1: '+6281358865329',
         cpline1: 'dadik123',
-        cpemail1: 'dadikkidad@gmail.com',
+        cpemail1: 'csc.petrol@gmail.com',
     },
     {
         route: 'paper-competition',
@@ -100,7 +100,7 @@ export const comps = [
         cptitle1: '-',
         cpphone1: '(+62)87722880485',
         cpline1: '-',
-        cpemail1: 'adisyasaz@gmail.com',
+        cpemail1: 'paper.petrolida@gmail.com',
     },
     {
         route: 'business-case-competition',
@@ -118,6 +118,11 @@ export const comps = [
         cpphone1: '085710083134',
         cpline1: 'ilham4',
         cpemail1: 'ilhamfadhillah4@gmail.com',
+        step1name: 'Registration',
+        step2name: 'Preliminary',
+        step3name: 'Semifinal',
+        step4name: 'Final',
+        step5name: 'Presentation',
     },
 ];
 
