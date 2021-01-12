@@ -265,15 +265,15 @@ export const comps = [
                 name: 'Registration',
                 content: [
                     'Open Registration: 17 January 2021',
-                    'Close Registration: 25 February 2021',
-                    'Payment Registration Deadline: 25 February 2021',
+                    'Close Registration: 19 February 2021',
+                    'Payment Registration Deadline: 19 February 2021',
                 ],
             },
             {
                 name: 'Abstract Submission',
                 content: [
                     'Working Time : 17 January 2021 - 26 February 2021',
-                    'Deadline Submission: 26 - 28 February 2021',
+                    'Deadline Submission: 26 February 2021',
                 ],
             },
             {
