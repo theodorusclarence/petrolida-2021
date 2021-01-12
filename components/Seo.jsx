@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
 export default function Seo({ children, seoData }) {
-    // TODO change this!
-    const publicURL = 'https://petrolida-2021.vercel.app';
+    const publicURL = 'http://petrolida.its.ac.id';
     return (
         <Head>
             {children}
