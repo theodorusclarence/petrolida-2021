@@ -196,8 +196,9 @@ export default function Competition({ comp }) {
                             <div className='step flex flex-row'>
                                 <div className='hidden md:flex flex-col items-center'>
                                     <div className='w-32 py-5 border border-third rounded mr-4 uppercase flex flex-col items-center justify-center'>
-                                        <div className='text-3xl font-black text-third'>Step 1</div>
-                                        <div className='text-third text-sm'>Registration</div>
+                                        <div className='text-3xl font-black text-third '>
+                                            Step 1
+                                        </div>
                                     </div>
                                     <div className='h-full border-l-4 border-transparent'>
                                         <div className='border-l-4 mr-4 h-full border-third border-dashed'></div>
@@ -207,12 +208,15 @@ export default function Competition({ comp }) {
                                     <div className='flex md:flex-row flex-col items-center'>
                                         <div className='flex-auto'>
                                             <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
-                                                <span className='font-black'>Step 1</span> -
-                                                Registration
+                                                <p className='font-black text-center'>Step 1</p>
                                             </div>
-                                            <div className='px-3'>
-                                                <p>Open Regist : 28 December 2020</p>
-                                                <p>Deadline : 13 January 2021</p>
+                                            <div className='px-3 space-y-2 text-center md:text-left'>
+                                                <h3 className='text-white'>
+                                                    {comp.keydates[0].name}
+                                                </h3>
+                                                {comp.keydates[0].content.map((item) => (
+                                                    <p key={item}>{item}</p>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className='md:w-64 p-5'>
@@ -240,7 +244,6 @@ export default function Competition({ comp }) {
                                 <div className='hidden md:flex flex-col items-center'>
                                     <div className='w-32 py-5 border border-third rounded ml-4 uppercase flex flex-col items-center justify-center'>
                                         <div className='text-3xl font-black text-third'>Step 2</div>
-                                        <div className='text-third text-sm'>Preliminary</div>
                                     </div>
                                     <div className='h-full border-r-4 border-transparent'>
                                         <div className='border-l-4 ml-4 h-full border-third border-dashed'></div>
@@ -250,13 +253,15 @@ export default function Competition({ comp }) {
                                     <div className='flex md:flex-row flex-col items-center'>
                                         <div className='flex-auto'>
                                             <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
-                                                <span className='font-black'>Step 2</span> -
-                                                Preliminary
+                                                <p className='font-black text-center'>Step 2</p>
                                             </div>
-                                            <div className='px-3 '>
-                                                <p>Case Release : 14 January 2021</p>
-                                                <p>Working Time : 14 January - 28 January 2021</p>
-                                                <p>Submission / Deadline : 28 January 2021</p>
+                                            <div className='px-3 space-y-2 text-center md:text-left'>
+                                                <h3 className='text-white'>
+                                                    {comp.keydates[1].name}
+                                                </h3>
+                                                {comp.keydates[1].content.map((item) => (
+                                                    <p key={item}>{item}</p>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className='md:w-64 p-5'>
@@ -283,7 +288,6 @@ export default function Competition({ comp }) {
                                 <div className='hidden md:flex flex-col items-center'>
                                     <div className='w-32 py-5 border border-third rounded mr-4 uppercase flex flex-col items-center justify-center'>
                                         <div className='text-3xl font-black text-third'>Step 3</div>
-                                        <div className='text-third text-sm'>Semifinal</div>
                                     </div>
                                     <div className='h-full border-l-4 border-transparent'>
                                         <div className='border-l-4 mr-4 h-full border-third border-dashed'></div>
@@ -293,16 +297,15 @@ export default function Competition({ comp }) {
                                     <div className='flex md:flex-row flex-col items-center'>
                                         <div className='flex-auto'>
                                             <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
-                                                <span className='font-black'>Step 3</span> -
-                                                Semifinal
+                                                <p className='font-black text-center'>Step 3</p>
                                             </div>
-                                            <div className='px-3'>
-                                                <p>Anouncement : 7 February 2021</p>
-                                                <p>
-                                                    Case Release & Working Time : 8 February - 25
-                                                    February 2021
-                                                </p>
-                                                <p>Submission / Deadline : 25 February 2021</p>
+                                            <div className='px-3 space-y-2 text-center md:text-left'>
+                                                <h3 className='text-white'>
+                                                    {comp.keydates[2].name}
+                                                </h3>
+                                                {comp.keydates[2].content.map((item) => (
+                                                    <p key={item}>{item}</p>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className='md:w-64 p-5'>
@@ -330,7 +333,6 @@ export default function Competition({ comp }) {
                                 <div className='hidden md:flex flex-col items-center'>
                                     <div className='w-32 py-5 border border-third rounded ml-4 uppercase flex flex-col items-center justify-center'>
                                         <div className='text-3xl font-black text-third'>Step 4</div>
-                                        <div className='text-third text-sm'>Final</div>
                                     </div>
                                     <div className='h-full border-r-4 border-transparent'>
                                         <div className='border-l-4 ml-4 h-full border-third border-dashed'></div>
@@ -340,15 +342,15 @@ export default function Competition({ comp }) {
                                     <div className='flex md:flex-row flex-col items-center'>
                                         <div className='flex-auto'>
                                             <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
-                                                <span className='font-black'>Step 4</span> - Final
+                                                <p className='font-black text-center'>Step 4</p>
                                             </div>
-                                            <div className='px-3'>
-                                                <p>Anouncement : 3 March 2021</p>
-                                                <p>Technical Meeting : 4 March 2021</p>
-                                                <p>
-                                                    Case Release & Working Time : 4 March - 6 March
-                                                    2021
-                                                </p>
+                                            <div className='px-3 space-y-2 text-center md:text-left'>
+                                                <h3 className='text-white'>
+                                                    {comp.keydates[3].name}
+                                                </h3>
+                                                {comp.keydates[3].content.map((item) => (
+                                                    <p key={item}>{item}</p>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className='md:w-64 p-5'>
@@ -376,18 +378,21 @@ export default function Competition({ comp }) {
                                 <div className='hidden md:flex flex-col items-center'>
                                     <div className='w-32 py-5 border border-third rounded mr-4 uppercase flex flex-col items-center justify-center'>
                                         <div className='text-3xl font-black text-third'>Step 5</div>
-                                        <div className='text-third text-sm'>Presentation</div>
                                     </div>
                                 </div>
                                 <div className='flex-auto border rounded  border-third'>
                                     <div className='flex md:flex-row flex-col items-center'>
                                         <div className='flex-auto'>
                                             <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
-                                                <span className='font-black'>Step 5</span> -
-                                                Presentation
+                                                <p className='font-black text-center'>Step 5</p>
                                             </div>
-                                            <div className='px-3'>
-                                                <p>Date : 6 March 2021</p>
+                                            <div className='px-3 space-y-2 text-center md:text-left'>
+                                                <h3 className='text-white'>
+                                                    {comp.keydates[4].name}
+                                                </h3>
+                                                {comp.keydates[4].content.map((item) => (
+                                                    <p key={item}>{item}</p>
+                                                ))}
                                             </div>
                                         </div>
                                         <div className='md:w-64 p-5'>
@@ -484,29 +489,22 @@ export default function Competition({ comp }) {
                 {/* End of Register Section */}
 
                 {/* CP  Section */}
-                <section id='cp' className='py-32 flex justify-center items-center'>
-                    <main className='container'>
-                        <h2 className='text-center text-primary md:translate-x-1/2'>
-                            Contact Person
-                        </h2>
-                        <div className="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-16 max-w-md md:max-w-2xl ">
-                            <div className="flex items-start px-4 py-6">
-                                <img className="w-12 h-12 rounded-full object-cover mr-4 shadow fill-current" src="/img/people.svg" alt="avatar"></img>
-                                <div className="">
-                                    <div className="flex items-center justify-between">
-                                        <h2 className="text-lg font-semibold text-gray-900 -mt-1">{comp.cpname1}</h2>
-                                    </div>
-                                    <p className="text-gray-700 font-medium">{comp.cptitle1}</p>
-                                    <p className="mt-3 text-gray-700 text-sm">
-                                        Phone Number : {comp.cpphone1}
-                                    </p>
-                                    <p className="mt-3 text-gray-700 text-sm">
-                                        Line ID : {comp.cpline1}
-                                    </p>
-                                    <p className="mt-3 text-gray-700 text-sm">
-                                        Email : {comp.cpemail1}
-                                    </p>
-                                </div>
+                <section id='cp' className='py-32'>
+                    <main className='container space-y-8'>
+                        <h2 className='text-center text-primary'>Contact Person</h2>
+                        <div className='flex items-center justify-center'>
+                            <div
+                                className='shadow-md rounded-md p-8'
+                                style={{
+                                    backgroundImage: 'url("/img/bg-hero.jpg")',
+                                    backgroundSize: 'cover',
+                                }}
+                            >
+                                <h3 className='text-lg'>{comp.cpname1}</h3>
+                                <p className='text-md'>{comp.cptitle1}</p>
+                                <p className='text-md'>Phone Number : {comp.cpphone1}</p>
+                                <p className='text-md'>Line ID : {comp.cpline1}</p>
+                                <p className='text-md'>Email : {comp.cpemail1}</p>
                             </div>
                         </div>
                     </main>

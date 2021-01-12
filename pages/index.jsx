@@ -188,7 +188,7 @@ export default function Home() {
                                     title='Recap'
                                     src='https://www.youtube-nocookie.com/embed/SDeXDzWaFd8'
                                     frameBorder='0'
-                                    allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                    allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                                     allowFullScreen
                                 ></iframe>
                             </div>

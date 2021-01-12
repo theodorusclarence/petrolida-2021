@@ -2,7 +2,8 @@ export const comps = [
     {
         route: 'oil-rig-design-competition',
         title: 'Oil Rig Design Competition',
-        quote: 'Utilizing Advanced and Innovative Offshore Platform to Optimize Energy Resources Efficiently',
+        quote:
+            'Utilizing Advanced and Innovative Offshore Platform to Optimize Energy Resources Efficiently',
         img: 'ordc',
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
@@ -15,11 +16,48 @@ export const comps = [
         cpphone1: '081334753265',
         cpline1: '-',
         cpemail1: 'ordc.petrolida@gmail.com',
+        keydates: [
+            {
+                name: 'Registration',
+                content: [
+                    'Open Registration : 17 January 2021',
+                    'Close Registration : 19 February 2021',
+                    'Payment Registration Deadline : 19 February 2021',
+                ],
+            },
+            {
+                name: 'Project Explanation Submission',
+                content: [
+                    'Working Time : 17 January 2021 - 26 February 2021',
+                    'Deadline Submission : 26 February 2021',
+                ],
+            },
+            {
+                name: 'Finalist Announcement',
+                content: [
+                    'Announcement : 7 March 2021',
+                    'Final Stage Payment Deadline : 15 March 2021',
+                ],
+            },
+            {
+                name: 'Presentation & Video Creativity Submission',
+                content: [
+                    'Technical Meeting and Simulation : 3 April 2021',
+                    'Video Creativity Submission Deadline : 5 April 2021',
+                    'Presentation Submission Deadline : 7 April 2021',
+                ],
+            },
+            {
+                name: 'Competition Day',
+                content: ['Date : 10 April 2021'],
+            },
+        ],
     },
     {
         route: 'fracturing-fluid-design-competition',
         title: 'Fracturing Fluid Design Competition',
-        quote: 'Maximizing Oil and Gas Recovery With an Optimal Mixture of Hydraulic Fracturing Fluid Through Technological Advancement and Cost-Effective Consideration in Pursuit of Future Energy Goals',
+        quote:
+            'Maximizing Oil and Gas Recovery With an Optimal Mixture of Hydraulic Fracturing Fluid Through Technological Advancement and Cost-Effective Consideration in Pursuit of Future Energy Goals',
         img: 'ffdc',
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
@@ -32,6 +70,38 @@ export const comps = [
         cpphone1: '087887730734',
         cpline1: 'degesss',
         cpemail1: 'ffdc.petrolida@gmail.com',
+        keydates: [
+            {
+                name: 'Registration',
+                content: [
+                    'Open Registration : 17 January 2021',
+                    'Close Registration : 19 February 2021',
+                    'Payment on registration form',
+                ],
+            },
+            {
+                name: 'General Knowledge & Fluid Design Paper',
+                content: [
+                    'Case Release : 2 February 2021',
+                    'Paper Submission Deadline : 2 March 2021',
+                ],
+            },
+            {
+                name: 'Finalist Announcement',
+                content: ['Finalist Announcement : 7 March 2021'],
+            },
+            {
+                name: 'Infographic & Presentation',
+                content: [
+                    'Technical Meeting & Simulation : 2 April 2021',
+                    'PowerPoint File & Infographic Submission Deadline : 7 April 2021',
+                ],
+            },
+            {
+                name: 'Competition Day',
+                content: ['Presentation & Infographic Favourite Winner Voting : 10 April 2021'],
+            },
+        ],
     },
 
     {
@@ -46,10 +116,40 @@ export const comps = [
         prize2: '2.500.000',
         prize3: '1.500.000',
         cpname1: 'Sultan Tanri Lammoreno',
-        cptitle1: '-',
+        cptitle1: 'Coordinator of Stock Trading Competition',
         cpphone1: '082233223453',
-        cpline1: '-',
+        cpline1: 'lammoreno',
         cpemail1: 'stc.petrolida@gmail.com',
+        keydates: [
+            {
+                name: 'Registration',
+                content: [
+                    'Open Registration : 17 January 2021',
+                    'Close Registration : 19 February 2021',
+                    'Payment on Registration Form',
+                ],
+            },
+            {
+                name: 'Preliminary Round',
+                content: ['Online Trading Phase: 1 March 2021 - 19 March 2021'],
+            },
+            {
+                name: 'Finalist Announcement',
+                content: ['Finalist Announcement : 21 March 2021'],
+            },
+            {
+                name: 'Road to Final',
+                content: [
+                    'Study Guide Release: 27 March 2021',
+                    'Technical Meeting: 2 April 2021',
+                    'Paper Submission: 7 April 2021',
+                ],
+            },
+            {
+                name: 'Competition Day',
+                content: ['Competition Day: 10 April 2021'],
+            },
+        ],
     },
     {
         route: 'petrosmart-competition',
@@ -63,15 +163,42 @@ export const comps = [
         prize2: '2.500.000',
         prize3: '1.500.000',
         cpname1: 'Benedictus Dicky Pradnya Agung Pramudhita',
-        cptitle1: 'Coordinator of Petrosmart Competition Petrolida 2021',
+        cptitle1: 'Coordinator of Petrosmart Competition',
         cpphone1: '+628226080916',
         cpline1: 'benedict_dpap',
         cpemail1: 'psc.petrolida@gmail.com',
+        keydates: [
+            {
+                name: 'Registration',
+                content: [
+                    'Open Registration : 17 January 2021',
+                    'Close Registration : 19 February 2021',
+                    'Payment on Registration Form',
+                ],
+            },
+            {
+                name: 'Top 12 Team Selection',
+                content: ['Finalist Selection : 27th February 2021'],
+            },
+            {
+                name: 'Finalist Announcement',
+                content: ['Finalist Announcement : 7 March 2021'],
+            },
+            {
+                name: 'Technical Meeting',
+                content: ['Technical Meeting : 2nd April 2021'],
+            },
+            {
+                name: 'Competition Day',
+                content: ['Preliminary until Final: 10 April 2021'],
+            },
+        ],
     },
     {
         route: 'case-study-competition',
         title: 'Case Study Competition',
-        quote: 'Optimizing the Production Process of Natural Gas to Reach a Smart Oil and Gas industry Using Advanced Technology.',
+        quote:
+            'Optimizing the Production Process of Natural Gas to Reach a Smart Oil and Gas industry Using Advanced Technology.',
         img: 'csc',
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
@@ -80,15 +207,45 @@ export const comps = [
         prize2: '2.500.000',
         prize3: '1.500.000',
         cpname1: 'Muhammad Dadik Aminnanda',
-        cptitle1: 'Project Officer of Case Study Competition',
+        cptitle1: 'Coordinator of Case Study Competition',
         cpphone1: '+6281358865329',
         cpline1: 'dadik123',
         cpemail1: 'csc.petrol@gmail.com',
+        keydates: [
+            {
+                name: 'Registration',
+                content: [
+                    'Open Registration : 17 January 2021',
+                    'Close Registration: 19 February 2021',
+                ],
+            },
+            {
+                name: 'Abstract Submission',
+                content: ['Abstract Submission Deadline: 26 February 2021'],
+            },
+            {
+                name: 'Finalist Announcement',
+                content: ['Finalist Announcement: 7 March 2021'],
+            },
+            {
+                name: 'Pre-Final Stage',
+                content: [
+                    'Tech Meet: 3 April 2031',
+                    'Solution Report Submission Deadline: 7 April 2021',
+                    'Presentation Submission Deadline: 7 April 2021',
+                ],
+            },
+            {
+                name: 'Competition Day',
+                content: ['Final Presentation: 10 April 2021'],
+            },
+        ],
     },
     {
         route: 'paper-competition',
         title: 'Paper Competition',
-        quote: 'Achieving sustainable development in oil and gas sector through eco-friendly practice utilizing innovative and applicable innovation',
+        quote:
+            'Achieving Sustainable Development in Oil and Gas Sector Through Eco-Friendly Practice Utilizing Innovative and Applicable Innovation',
         img: 'pc',
         guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
         about:
@@ -97,10 +254,41 @@ export const comps = [
         prize2: '2.500.000',
         prize3: '1.500.000',
         cpname1: 'Adisya Salsabila',
-        cptitle1: '-',
+        cptitle1: 'Coordinator of Paper Competition',
         cpphone1: '(+62)87722880485',
         cpline1: '-',
         cpemail1: 'paper.petrolida@gmail.com',
+        keydates: [
+            {
+                name: 'Registration',
+                content: [
+                    'Open Registration : 28 December 2020',
+                    'Close Registration: 25 February 2021',
+                ],
+            },
+            {
+                name: 'Abstract Submission',
+                content: [
+                    'Working Time : 17 January 2021-26 February 2021',
+                    'Deadline Submission: 26-28 February 2021',
+                ],
+            },
+            {
+                name: 'Finalist Announcement',
+                content: [
+                    'Working Time : 17 January 2021-26 February 2021',
+                    'Deadline Submission: 26-28 February 2021',
+                ],
+            },
+            {
+                name: 'Pre-Final Stage',
+                content: ['Finalist Announcement: 7 March 2021'],
+            },
+            {
+                name: 'Competition Day',
+                content: ['Final Presentation: 10 April 2021'],
+            },
+        ],
     },
     {
         route: 'business-case-competition',
@@ -118,13 +306,40 @@ export const comps = [
         cpphone1: '085710083134',
         cpline1: 'ilham4',
         cpemail1: 'ilhamfadhillah4@gmail.com',
-        keydates: [{name: 'Registration', 
-        content: ['Open Regist : 28 December 2020','Deadline : 13 January 2021']}],
-        step1name: 'Registration',
-        step2name: 'Preliminary',
-        step3name: 'Semifinal',
-        step4name: 'Final',
-        step5name: 'Presentation',
+        keydates: [
+            {
+                name: 'Registration',
+                content: ['Open Registration : 28 December 2020', 'Deadline : 13 January 2021'],
+            },
+            {
+                name: 'Preliminary',
+                content: [
+                    'Case Release : 14 January 2021',
+                    'Working Time : 14 January - 28 January 2021',
+                    'Submission / Deadline : 28 January 2021',
+                ],
+            },
+            {
+                name: 'Semifinal',
+                content: [
+                    'Announcement : 7 February 2021',
+                    'Case Release & Working Time : 8 February - 25 February 2021',
+                    'Submission / Deadline : 25 February 2021',
+                ],
+            },
+            {
+                name: 'Final',
+                content: [
+                    'Announcement : 3 March 2021',
+                    'Technical Meeting : 4 March 2021',
+                    'Case Release & Working Time : 4 March - 6 March 2021',
+                ],
+            },
+            {
+                name: 'Presentation',
+                content: ['Date : 6 March 2021'],
+            },
+        ],
     },
 ];
 
@@ -141,7 +356,7 @@ export const noncomps = [
         route: 'city-tour',
         img: 'ct',
         title: 'City Tour',
-        theme: 'Adapting to Consumer Behaviour During a Time of Crisis, City of Heroes, Endless Discoveries',
+        theme: 'City of Heroes, Endless Discoveries',
         desc:
             'City Tour is one one of the series of Petrolida 2021’s post events, aiming to let the participants unwind after the competition by exploring the beauty of the city of heroes, Surabaya. Aside from that, Petrolida’s City Tour is also a perfect moment to connect everyone from fellow participants to the rest of the Petrolida 2021 committee.',
     },
@@ -159,20 +374,24 @@ export const regis = [
     {
         route: 'oil-rig-design-competition',
         title: 'Oil Rig Design Competition Form',
-        quote: 'Utilizing Advanced and Innovative Offshore Platform to Optimize Energy Resources Efficiently',
+        quote:
+            'Utilizing Advanced and Innovative Offshore Platform to Optimize Energy Resources Efficiently',
         img: 'ordc',
-        formsrc: 'https://docs.google.com/forms/d/e/1FAIpQLSebrEqXvK7Twsa5K-LAEAOA-VXVEsKqxelFI0oE_SJDFrJj8A/viewform?embedded=true',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSebrEqXvK7Twsa5K-LAEAOA-VXVEsKqxelFI0oE_SJDFrJj8A/viewform?embedded=true',
         formheight: 5500,
-        formheightmobile: 6200
+        formheightmobile: 6200,
     },
     {
         route: 'fracturing-fluid-design-competition',
         title: 'Fracturing Fluid Design Competition Form',
-        quote: 'Maximizing Oil and Gas Recovery With an Optimal Mixture of Hydraulic Fracturing Fluid Through Technological Advancement and Cost-Effective Consideration in Pursuit of Future Energy Goals',
+        quote:
+            'Maximizing Oil and Gas Recovery With an Optimal Mixture of Hydraulic Fracturing Fluid Through Technological Advancement and Cost-Effective Consideration in Pursuit of Future Energy Goals',
         img: 'ffdc',
-        formsrc: 'https://docs.google.com/forms/d/e/1FAIpQLSexwOtg6o3AfOn3KwcbFhXYI4E4WxOm-Jj_SHHVRw5lHKUx2w/viewform?embedded=true',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSexwOtg6o3AfOn3KwcbFhXYI4E4WxOm-Jj_SHHVRw5lHKUx2w/viewform?embedded=true',
         formheight: 3000,
-        formheightmobile: 3600
+        formheightmobile: 3600,
     },
 
     {
@@ -180,44 +399,51 @@ export const regis = [
         title: 'Stock Trading Competition Form',
         quote: 'Developing Youth Contribution for Indonesia Stock Market Future.',
         img: 'stc',
-        formsrc: '',
-        formheight: 0,
-        formheightmobile: 0
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSfv8ocy4wLKxB2bQNVAVOtFAvH4ee8bUD2OaF0Q8RRA-sZb3w/viewform?embedded=true',
+        formheight: 3000,
+        formheightmobile: 3400,
     },
     {
         route: 'petrosmart-competition',
         title: 'Petrosmart Competition Form',
         quote: 'Delivering Insight and Rehearsing Skills to Enhance Oil and Gas Knowledge',
         img: 'psc',
-        formsrc: 'https://docs.google.com/forms/d/e/1FAIpQLSf5593xBCyfgWN7w5YTzfADX9LqEipkrwBudO5Jvr4g4mtGfw/viewform?embedded=true',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSf5593xBCyfgWN7w5YTzfADX9LqEipkrwBudO5Jvr4g4mtGfw/viewform?embedded=true',
         formheight: 3600,
-        formheightmobile: 4400
+        formheightmobile: 4400,
     },
     {
         route: 'case-study-competition',
         title: 'Case Study Competition Form',
-        quote: 'Optimizing the Production Process of Natural Gas to Reach a Smart Oil and Gas industry Using Advanced Technology.',
+        quote:
+            'Optimizing the Production Process of Natural Gas to Reach a Smart Oil and Gas industry Using Advanced Technology.',
         img: 'csc',
-        formsrc: 'https://docs.google.com/forms/d/e/1FAIpQLSfMJv6KRmpJYJ3WB5sefgCyuCsutthZskv3Z_2xMyGOksna_A/viewform?embedded=true',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSfMJv6KRmpJYJ3WB5sefgCyuCsutthZskv3Z_2xMyGOksna_A/viewform?embedded=true',
         formheight: 6100,
-        formheightmobile: 7000
+        formheightmobile: 7000,
     },
     {
         route: 'paper-competition',
         title: 'Paper Competition Form',
-        quote: 'Achieving sustainable development in oil and gas sector through eco-friendly practice utilizing innovative and applicable innovation',
+        quote:
+            'Achieving Sustainable Development in Oil and Gas Sector Through Eco-Friendly Practice Utilizing Innovative and Applicable Innovation',
         img: 'pc',
-        formsrc: 'https://docs.google.com/forms/d/e/1FAIpQLSe1p4B0BPJovt2KdneBeqylAtiCZ86b4qqfvmQe0BJN40av1A/viewform?embedded=true',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSe1p4B0BPJovt2KdneBeqylAtiCZ86b4qqfvmQe0BJN40av1A/viewform?embedded=true',
         formheight: 4300,
-        formheightmobile: 5000
+        formheightmobile: 5000,
     },
     {
         route: 'business-case-competition',
         title: 'Business Case Competition Form',
         quote: 'Adapting to Consumer Behaviour During a Time of Crisis',
         img: 'bcc',
-        formsrc: 'https://docs.google.com/forms/d/e/1FAIpQLSf80BGFdjffgznHSIuMnVu5z5ODcb3nvK836qEvp5rDStWLXw/viewform?embedded=true',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSf80BGFdjffgznHSIuMnVu5z5ODcb3nvK836qEvp5rDStWLXw/viewform?embedded=true',
         formheight: 5000,
-        formheightmobile: 4400
+        formheightmobile: 4400,
     },
 ];
