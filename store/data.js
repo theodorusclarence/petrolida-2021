@@ -17,7 +17,7 @@ export const comps = [
         cpname1: 'Muhammad Fadhlan Rafi',
         cptitle1: 'Coordinator of Oil Rig Design Competition',
         cpphone1: '081334753265',
-        cpline1: '-',
+        cpline1: 'mfadhlaan',
         cpemail1: 'ordc.petrolida@gmail.com',
         keydates: [
             {
@@ -270,7 +270,7 @@ export const comps = [
         cpname1: 'Adisya Salsabila',
         cptitle1: 'Coordinator of Paper Competition',
         cpphone1: '(+62)87722880485',
-        cpline1: '-',
+        cpline1: 'disyaaz',
         cpemail1: 'paper.petrolida@gmail.com',
         keydates: [
             {
