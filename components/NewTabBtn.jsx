@@ -1,4 +1,4 @@
-export default function NewTabBtn({ href, children, outline, style, onClick }) {
+export default function NewTabBtn({ href, children, outline, style, onClick, disabled }) {
     return (
         <a
             href={href}

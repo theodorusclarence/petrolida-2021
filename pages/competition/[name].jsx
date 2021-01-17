@@ -125,7 +125,7 @@ export default function Competition({ comp }) {
             <div>
                 {/* Hero Section */}
                 <section
-                    className='bg-gray-300 flex items-center min-h-screen'
+                    className='flex items-center min-h-screen bg-gray-300'
                     style={{
                         backgroundImage: `url("/img/bg-${comp.img}.jpg")`,
                         backgroundPosition: 'center center',
@@ -133,13 +133,13 @@ export default function Competition({ comp }) {
                     }}
                 >
                     <main className='container'>
-                        <div className='mb-16 md:mb-0 flex flex-col-reverse md:flex-row justify-center items-center'>
+                        <div className='flex flex-col-reverse items-center justify-center mb-16 md:mb-0 md:flex-row'>
                             <div className='w-full md:ml-12 md:text-left text-primary'>
-                                <h1 className='hero my-4 text-primary'>{comp.title}</h1>
-                                <blockquote className='hero mb-4 md:max-w-md'>
+                                <h1 className='my-4 hero text-primary'>{comp.title}</h1>
+                                <blockquote className='mb-4 hero md:max-w-md'>
                                     {comp.quote}
                                 </blockquote>
-                                <div className='hero items-center space-x-4'>
+                                <div className='items-center space-x-4 hero'>
                                     <Button
                                         href='#'
                                         onClick={(e) => {
@@ -151,12 +151,10 @@ export default function Competition({ comp }) {
                                     >
                                         Learn More
                                     </Button>
-                                    {comp.img === 'bcc' && (
-                                        <NewTabBtn href={comp.guidebook} outline>
-                                            Guidebook
-                                        </NewTabBtn>
-                                    )}
-                                    {/* <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-primary rounded-full hover:bg-hover'>
+                                    <NewTabBtn href={comp.guidebook} outline>
+                                        {comp.img === 'bcc' ? 'Guidebook' : 'Invitation Letter'}
+                                    </NewTabBtn>
+                                    {/* <button className='items-center justify-center p-2 text-center rounded-full md:p-3 text-primary bg-primary hover:bg-hover'>
                                         <svg
                                             className='w-3 h-3 text-white'
                                             xmlns='http://www.w3.org/2000/svg'
@@ -173,7 +171,7 @@ export default function Competition({ comp }) {
                                 </div>
                             </div>
                             <img
-                                className='hero mx-auto md:mx-0  max-h-52 md:max-h-80'
+                                className='mx-auto hero md:mx-0 max-h-52 md:max-h-80'
                                 src={`/img/logo-${comp.img}.png`}
                                 alt='Illustrasi'
                             />
@@ -183,15 +181,15 @@ export default function Competition({ comp }) {
                 {/* End of Hero Section */}
 
                 {/* About Section */}
-                <section id='about' ref={about} className='py-24 text-primary overflow-hidden'>
+                <section id='about' ref={about} className='py-24 overflow-hidden text-primary'>
                     <main className='container'>
-                        <h2 className='text-center text-primary pb-16'>About The Competition</h2>
-                        <div className='mb-4 flex flex-col-reverse md:flex-row justify-center items-center md:transform md:translate-x-12'>
+                        <h2 className='pb-16 text-center text-primary'>About The Competition</h2>
+                        <div className='flex flex-col-reverse items-center justify-center mb-4 md:flex-row md:transform md:translate-x-12'>
                             <div className='about-left md:text-left'>
                                 <p className='mb-4 md:max-w-md '>{comp.about}</p>
                             </div>
                             <img
-                                className='about-right mb-4 mx-auto md:mx-0 max-h-44 md:max-h-64'
+                                className='mx-auto mb-4 about-right md:mx-0 max-h-44 md:max-h-64'
                                 src='/img/what.png'
                                 alt='illus'
                             />
@@ -203,25 +201,25 @@ export default function Competition({ comp }) {
                 {/* Keydates Section */}
                 <section id='keydates' className='py-24 text-white bg-primary'>
                     <main className='container'>
-                        <h2 className='text-center text-white pb-16 md:translate-x-1/2'>
+                        <h2 className='pb-16 text-center text-white md:translate-x-1/2'>
                             Competition Keydates
                         </h2>
-                        <div className='max-w-5xl mx-auto py-10'>
-                            <div className='step flex flex-row'>
-                                <div className='hidden md:flex flex-col items-center'>
-                                    <div className='w-32 py-5 border border-third rounded mr-4 uppercase flex flex-col items-center justify-center'>
+                        <div className='max-w-5xl py-10 mx-auto'>
+                            <div className='flex flex-row step'>
+                                <div className='flex-col items-center hidden md:flex'>
+                                    <div className='flex flex-col items-center justify-center w-32 py-5 mr-4 uppercase border rounded border-third'>
                                         <div className='text-3xl font-black text-third '>
                                             Step 1
                                         </div>
                                     </div>
                                     <div className='h-full border-l-4 border-transparent'>
-                                        <div className='border-l-4 mr-4 h-full border-third border-dashed'></div>
+                                        <div className='h-full mr-4 border-l-4 border-dashed border-third'></div>
                                     </div>
                                 </div>
-                                <div className='flex-auto border rounded  border-third'>
-                                    <div className='flex md:flex-row flex-col items-center'>
+                                <div className='flex-auto border rounded border-third'>
+                                    <div className='flex flex-col items-center md:flex-row'>
                                         <div className='flex-auto'>
-                                            <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
+                                            <div className='pt-3 pl-3 text-sm font-normal uppercase md:hidden text-third'>
                                                 <p className='font-black text-center'>Step 1</p>
                                             </div>
                                             <div className='px-3 space-y-2 text-center md:text-left'>
@@ -233,7 +231,7 @@ export default function Competition({ comp }) {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className='md:w-64 p-5'>
+                                        <div className='p-5 md:w-64'>
                                             <img
                                                 src='https://www.flaticon.com/svg/static/icons/svg/3638/3638142.svg'
                                                 alt='step 1'
@@ -244,29 +242,29 @@ export default function Competition({ comp }) {
                                 </div>
                             </div>
 
-                            <div className='step flex items-start flex-row'>
+                            <div className='flex flex-row items-start step'>
                                 <div className='border-t-4 border-r-4 border-transparent'>
-                                    <div className='w-16 ml-16 h-16 border-l-4 border-third border-dashed border-b-4 rounded-bl-full'></div>
+                                    <div className='w-16 h-16 ml-16 border-b-4 border-l-4 border-dashed rounded-bl-full border-third'></div>
                                 </div>
-                                <div className='border-t-4 border-transparent flex-auto'>
-                                    <div className='h-16 border-b-4 border-third border-dashed'></div>
+                                <div className='flex-auto border-t-4 border-transparent'>
+                                    <div className='h-16 border-b-4 border-dashed border-third'></div>
                                 </div>
-                                <div className='w-16 mt-16 mr-16 h-16 border-r-4 border-third border-dashed border-t-4 rounded-tr-full'></div>
+                                <div className='w-16 h-16 mt-16 mr-16 border-t-4 border-r-4 border-dashed rounded-tr-full border-third'></div>
                             </div>
 
-                            <div className='step flex flex-row-reverse'>
-                                <div className='hidden md:flex flex-col items-center'>
-                                    <div className='w-32 py-5 border border-third rounded ml-4 uppercase flex flex-col items-center justify-center'>
+                            <div className='flex flex-row-reverse step'>
+                                <div className='flex-col items-center hidden md:flex'>
+                                    <div className='flex flex-col items-center justify-center w-32 py-5 ml-4 uppercase border rounded border-third'>
                                         <div className='text-3xl font-black text-third'>Step 2</div>
                                     </div>
                                     <div className='h-full border-r-4 border-transparent'>
-                                        <div className='border-l-4 ml-4 h-full border-third border-dashed'></div>
+                                        <div className='h-full ml-4 border-l-4 border-dashed border-third'></div>
                                     </div>
                                 </div>
-                                <div className='flex-auto border rounded  border-third'>
-                                    <div className='flex md:flex-row flex-col items-center'>
+                                <div className='flex-auto border rounded border-third'>
+                                    <div className='flex flex-col items-center md:flex-row'>
                                         <div className='flex-auto'>
-                                            <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
+                                            <div className='pt-3 pl-3 text-sm font-normal uppercase md:hidden text-third'>
                                                 <p className='font-black text-center'>Step 2</p>
                                             </div>
                                             <div className='px-3 space-y-2 text-center md:text-left'>
@@ -278,7 +276,7 @@ export default function Competition({ comp }) {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className='md:w-64 p-5'>
+                                        <div className='p-5 md:w-64'>
                                             <img
                                                 src='https://www.flaticon.com/svg/static/icons/svg/1756/1756679.svg'
                                                 alt='step 2'
@@ -289,28 +287,28 @@ export default function Competition({ comp }) {
                                 </div>
                             </div>
 
-                            <div className='step flex items-start flex-row-reverse'>
+                            <div className='flex flex-row-reverse items-start step'>
                                 <div className='border-t-4 border-l-4 border-transparent'>
-                                    <div className='w-16 mr-16 h-16 border-r-4 border-third border-dashed border-b-4 rounded-br-full'></div>
+                                    <div className='w-16 h-16 mr-16 border-b-4 border-r-4 border-dashed rounded-br-full border-third'></div>
                                 </div>
-                                <div className='border-t-4 border-transparent flex-auto'>
-                                    <div className='h-16 border-b-4 border-third border-dashed'></div>
+                                <div className='flex-auto border-t-4 border-transparent'>
+                                    <div className='h-16 border-b-4 border-dashed border-third'></div>
                                 </div>
-                                <div className='w-16 mt-16 ml-16 h-16 border-l-4 border-third border-dashed border-t-4 rounded-tl-full'></div>
+                                <div className='w-16 h-16 mt-16 ml-16 border-t-4 border-l-4 border-dashed rounded-tl-full border-third'></div>
                             </div>
-                            <div className='step flex flex-row'>
-                                <div className='hidden md:flex flex-col items-center'>
-                                    <div className='w-32 py-5 border border-third rounded mr-4 uppercase flex flex-col items-center justify-center'>
+                            <div className='flex flex-row step'>
+                                <div className='flex-col items-center hidden md:flex'>
+                                    <div className='flex flex-col items-center justify-center w-32 py-5 mr-4 uppercase border rounded border-third'>
                                         <div className='text-3xl font-black text-third'>Step 3</div>
                                     </div>
                                     <div className='h-full border-l-4 border-transparent'>
-                                        <div className='border-l-4 mr-4 h-full border-third border-dashed'></div>
+                                        <div className='h-full mr-4 border-l-4 border-dashed border-third'></div>
                                     </div>
                                 </div>
-                                <div className='flex-auto border rounded  border-third'>
-                                    <div className='flex md:flex-row flex-col items-center'>
+                                <div className='flex-auto border rounded border-third'>
+                                    <div className='flex flex-col items-center md:flex-row'>
                                         <div className='flex-auto'>
-                                            <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
+                                            <div className='pt-3 pl-3 text-sm font-normal uppercase md:hidden text-third'>
                                                 <p className='font-black text-center'>Step 3</p>
                                             </div>
                                             <div className='px-3 space-y-2 text-center md:text-left'>
@@ -322,7 +320,7 @@ export default function Competition({ comp }) {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className='md:w-64 p-5'>
+                                        <div className='p-5 md:w-64'>
                                             <img
                                                 src='https://www.flaticon.com/svg/static/icons/svg/2665/2665430.svg'
                                                 alt='step 3'
@@ -333,29 +331,29 @@ export default function Competition({ comp }) {
                                 </div>
                             </div>
 
-                            <div className='step flex items-start flex-row'>
+                            <div className='flex flex-row items-start step'>
                                 <div className='border-t-4 border-r-4 border-transparent'>
-                                    <div className='w-16 ml-16 h-16 border-l-4 border-third border-dashed border-b-4 rounded-bl-full'></div>
+                                    <div className='w-16 h-16 ml-16 border-b-4 border-l-4 border-dashed rounded-bl-full border-third'></div>
                                 </div>
-                                <div className='border-t-4 border-transparent flex-auto'>
-                                    <div className='h-16 border-b-4 border-third border-dashed'></div>
+                                <div className='flex-auto border-t-4 border-transparent'>
+                                    <div className='h-16 border-b-4 border-dashed border-third'></div>
                                 </div>
-                                <div className='w-16 mt-16 mr-16 h-16 border-r-4 border-third border-dashed border-t-4 rounded-tr-full'></div>
+                                <div className='w-16 h-16 mt-16 mr-16 border-t-4 border-r-4 border-dashed rounded-tr-full border-third'></div>
                             </div>
 
-                            <div className='step flex flex-row-reverse'>
-                                <div className='hidden md:flex flex-col items-center'>
-                                    <div className='w-32 py-5 border border-third rounded ml-4 uppercase flex flex-col items-center justify-center'>
+                            <div className='flex flex-row-reverse step'>
+                                <div className='flex-col items-center hidden md:flex'>
+                                    <div className='flex flex-col items-center justify-center w-32 py-5 ml-4 uppercase border rounded border-third'>
                                         <div className='text-3xl font-black text-third'>Step 4</div>
                                     </div>
                                     <div className='h-full border-r-4 border-transparent'>
-                                        <div className='border-l-4 ml-4 h-full border-third border-dashed'></div>
+                                        <div className='h-full ml-4 border-l-4 border-dashed border-third'></div>
                                     </div>
                                 </div>
-                                <div className='flex-auto border rounded  border-third'>
-                                    <div className='flex md:flex-row flex-col items-center'>
+                                <div className='flex-auto border rounded border-third'>
+                                    <div className='flex flex-col items-center md:flex-row'>
                                         <div className='flex-auto'>
-                                            <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
+                                            <div className='pt-3 pl-3 text-sm font-normal uppercase md:hidden text-third'>
                                                 <p className='font-black text-center'>Step 4</p>
                                             </div>
                                             <div className='px-3 space-y-2 text-center md:text-left'>
@@ -367,7 +365,7 @@ export default function Competition({ comp }) {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className='md:w-64 p-5'>
+                                        <div className='p-5 md:w-64'>
                                             <img
                                                 src='https://www.flaticon.com/svg/static/icons/svg/2641/2641497.svg'
                                                 alt='step 4'
@@ -378,26 +376,26 @@ export default function Competition({ comp }) {
                                 </div>
                             </div>
 
-                            <div className='step flex items-start flex-row-reverse'>
+                            <div className='flex flex-row-reverse items-start step'>
                                 <div className='border-t-4 border-l-4 border-transparent'>
-                                    <div className='w-16 mr-16 h-16 border-r-4 border-third border-dashed border-b-4 rounded-br-full'></div>
+                                    <div className='w-16 h-16 mr-16 border-b-4 border-r-4 border-dashed rounded-br-full border-third'></div>
                                 </div>
-                                <div className='border-t-4 border-transparent flex-auto'>
-                                    <div className='h-16 border-b-4 border-third border-dashed'></div>
+                                <div className='flex-auto border-t-4 border-transparent'>
+                                    <div className='h-16 border-b-4 border-dashed border-third'></div>
                                 </div>
-                                <div className='w-16 mt-16 ml-16 h-16 border-l-4 border-third border-dashed border-t-4 rounded-tl-full'></div>
+                                <div className='w-16 h-16 mt-16 ml-16 border-t-4 border-l-4 border-dashed rounded-tl-full border-third'></div>
                             </div>
 
-                            <div className='step flex flex-row'>
-                                <div className='hidden md:flex flex-col items-center'>
-                                    <div className='w-32 py-5 border border-third rounded mr-4 uppercase flex flex-col items-center justify-center'>
+                            <div className='flex flex-row step'>
+                                <div className='flex-col items-center hidden md:flex'>
+                                    <div className='flex flex-col items-center justify-center w-32 py-5 mr-4 uppercase border rounded border-third'>
                                         <div className='text-3xl font-black text-third'>Step 5</div>
                                     </div>
                                 </div>
-                                <div className='flex-auto border rounded  border-third'>
-                                    <div className='flex md:flex-row flex-col items-center'>
+                                <div className='flex-auto border rounded border-third'>
+                                    <div className='flex flex-col items-center md:flex-row'>
                                         <div className='flex-auto'>
-                                            <div className='md:hidden text-sm font-normal uppercase pt-3 pl-3 text-third'>
+                                            <div className='pt-3 pl-3 text-sm font-normal uppercase md:hidden text-third'>
                                                 <p className='font-black text-center'>Step 5</p>
                                             </div>
                                             <div className='px-3 space-y-2 text-center md:text-left'>
@@ -409,7 +407,7 @@ export default function Competition({ comp }) {
                                                 ))}
                                             </div>
                                         </div>
-                                        <div className='md:w-64 p-5'>
+                                        <div className='p-5 md:w-64'>
                                             <img
                                                 src='https://www.flaticon.com/svg/static/icons/svg/201/201594.svg'
                                                 alt='step 3'
@@ -425,45 +423,45 @@ export default function Competition({ comp }) {
                 {/* End of Keydates Section */}
 
                 {/* Prize  Section */}
-                <section id='prize' className='py-24 flex justify-center items-center'>
+                <section id='prize' className='flex items-center justify-center py-24'>
                     <main className='container'>
-                        <h2 className='text-center text-primary pb-16 md:translate-x-1/2'>
+                        <h2 className='pb-16 text-center text-primary md:translate-x-1/2'>
                             Competition Prize
                         </h2>
                         <img
-                            className='place mx-auto w-full max-w-lg'
+                            className='w-full max-w-lg mx-auto place'
                             src='/img/compeprize.svg'
                             alt='Logo Petrolida'
                         />
                         <div className='flex justify-center py-8 text-center'>
-                            <div className='place w-full md:w-1/3 justify-center'>
-                                <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
+                            <div className='justify-center w-full place md:w-1/3'>
+                                <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
                                         src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
                                         alt='step 3'
-                                        className='object-scale-down w-5 h-5 fill-current text-white'
+                                        className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
                                 </div>
                                 <h3>1st Place</h3>
                                 <p>Rp {comp.prize1}</p>
                             </div>
-                            <div className='place w-full md:w-1/3'>
-                                <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
+                            <div className='w-full place md:w-1/3'>
+                                <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
                                         src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
                                         alt='step 3'
-                                        className='object-scale-down w-5 h-5 fill-current text-white'
+                                        className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
                                 </div>
                                 <h3>2nd Place</h3>
                                 <p>Rp {comp.prize2}</p>
                             </div>
-                            <div className='place w-full md:w-1/3'>
-                                <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
+                            <div className='w-full place md:w-1/3'>
+                                <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
                                         src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
                                         alt='step 3'
-                                        className='object-scale-down w-5 h-5 fill-current text-white'
+                                        className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
                                 </div>
                                 <h3>3rd Place</h3>
@@ -471,12 +469,12 @@ export default function Competition({ comp }) {
                             </div>
                         </div>
                         {comp.prize4 && (
-                            <div className='place w-full md:w-1/3 mx-auto text-center mt-4'>
-                                <div className='inline-block p-3 text-center text-white transition border border-primary rounded-full bg-primary ripple hover:bg-hover focus:outline-none'>
+                            <div className='w-full mx-auto mt-4 text-center place md:w-1/3'>
+                                <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
                                         src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
                                         alt='step 3'
-                                        className='object-scale-down w-5 h-5 fill-current text-white'
+                                        className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
                                 </div>
                                 <h3>Favorite Winner</h3>
@@ -490,20 +488,20 @@ export default function Competition({ comp }) {
                 {/* Register Section */}
                 <section
                     id='register'
-                    className='p-8 bg-gray-300 py-24 flex flex-col justify-center items-center overflow-hidden'
+                    className='flex flex-col items-center justify-center p-8 py-24 overflow-hidden bg-gray-300'
                     style={{
                         backgroundImage: 'url("/img/bg-hero.jpg")',
                         backgroundSize: 'cover',
                     }}
                 >
                     <main className='container'>
-                        <h2 className='register-left text-center text-primary mb-4 md:mb-8 md:translate-x-1/2'>
+                        <h2 className='mb-4 text-center register-left text-primary md:mb-8 md:translate-x-1/2'>
                             So, what are you waiting for?
                         </h2>
-                        <div className='register-right flex justify-center button-group'>
+                        <div className='flex justify-center register-right button-group'>
                             {comp.img === 'bcc' ? (
-                                <NewTabBtn href='https://forms.gle/KPTZouYjzCfZyLtV9' outline>
-                                    Register Now
+                                <NewTabBtn href='/' outline>
+                                    Registration Closed
                                 </NewTabBtn>
                             ) : (
                                 <Button href={`/register/${comp.route}`} outline>
@@ -521,7 +519,7 @@ export default function Competition({ comp }) {
                         <h2 className='text-center text-primary'>Contact Person</h2>
                         <div className='flex items-center justify-center'>
                             <div
-                                className='cp-card shadow-md rounded-md p-8'
+                                className='p-8 rounded-md shadow-md cp-card'
                                 style={{
                                     backgroundImage: 'url("/img/bg-hero.jpg")',
                                     backgroundSize: 'cover',

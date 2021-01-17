@@ -1,11 +1,13 @@
 export const comps = [
     {
         route: 'oil-rig-design-competition',
+        registrationIsOpen: true,
         title: 'Oil Rig Design Competition',
         quote:
             'Utilizing Advanced and Innovative Offshore Platform to Optimize Energy Resources Efficiently',
         img: 'ordc',
-        guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
+        guidebook:
+            'https://drive.google.com/file/d/1liSe0Rpefr1nQ4ATyGXP11szdGxrf48Q/view?usp=sharing',
         about:
             'Oil Rig Design Competition is a competition where the participants compete their knowledge and innovation on designing semi-submersible platforms with engineering sense to overcome the obstacles on the given field.',
         prize1: '3.500.000',
@@ -56,11 +58,13 @@ export const comps = [
     },
     {
         route: 'fracturing-fluid-design-competition',
+        registrationIsOpen: true,
         title: 'Fracturing Fluid Design Competition',
         quote:
             'Maximizing Oil and Gas Recovery With an Optimal Mixture of Hydraulic Fracturing Fluid Through Technological Advancement and Cost-Effective Consideration in Pursuit of Future Energy Goals',
         img: 'ffdc',
-        guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
+        guidebook:
+            'https://drive.google.com/file/d/1liSe0Rpefr1nQ4ATyGXP11szdGxrf48Q/view?usp=sharing',
         about:
             'Fracture Fluid Design Competition is a competition in which students are challenged to create fracture fluid systems in laboratory scale by applying a series of chemical additives to enhance the productivity of a well according to the case. Participants are required to analyze the case given and present their solution in the form of paper. Then, participants must create a fracture fluid to correspond to the submitted paper and present both their paper and the fracture fluid to the judges.',
         prize1: '3.000.000',
@@ -108,10 +112,12 @@ export const comps = [
 
     {
         route: 'stock-trading-competition',
+        registrationIsOpen: true,
         title: 'Stock Trading Competition',
         quote: 'Developing Youth Contribution for Indonesia Stock Market Future.',
         img: 'stc',
-        guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
+        guidebook:
+            'https://drive.google.com/file/d/1liSe0Rpefr1nQ4ATyGXP11szdGxrf48Q/view?usp=sharing',
         about:
             'Stock trading competition is a competition where participants trade with virtual money to obtain the highest capital gain. The aim of this competition is to increase the participants knowledge from online stock trading courses and to improve their analysis skills by presenting the stock analysis on a specific company.',
         prize1: '3.000.000',
@@ -155,10 +161,12 @@ export const comps = [
     },
     {
         route: 'petrosmart-competition',
+        registrationIsOpen: true,
         title: 'Petrosmart Competition',
         quote: 'Delivering Insight and Rehearsing Skills to Enhance Oil and Gas Knowledge',
         img: 'psc',
-        guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
+        guidebook:
+            'https://drive.google.com/file/d/1liSe0Rpefr1nQ4ATyGXP11szdGxrf48Q/view?usp=sharing',
         about:
             'Petrosmart Competition is a quick-fire rounds competition where teams from various universities compete against one another to challenge their knowledge by answering questions covering technical and non-technical aspects of the oil and gas industry.',
         prize1: '3.000.000',
@@ -198,11 +206,13 @@ export const comps = [
     },
     {
         route: 'case-study-competition',
+        registrationIsOpen: true,
         title: 'Case Study Competition',
         quote:
             'Optimizing the Production Process of Natural Gas to Reach a Smart Oil and Gas industry Using Advanced Technology.',
         img: 'csc',
-        guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
+        guidebook:
+            'https://drive.google.com/file/d/1liSe0Rpefr1nQ4ATyGXP11szdGxrf48Q/view?usp=sharing',
         about:
             'Case Study analysis requires participants to examine a specific case, provide several alternative solutions and propose the most effective solution using in-depth data and quantitative evidence.',
         prize1: '3.000.000',
@@ -245,11 +255,13 @@ export const comps = [
     },
     {
         route: 'paper-competition',
+        registrationIsOpen: true,
         title: 'Paper Competition',
         quote:
             'Achieving Sustainable Development in Oil and Gas Sector Through Eco-Friendly Practice Utilizing Innovative and Applicable Innovation',
         img: 'pc',
-        guidebook: 'https://drive.google.com/drive/folders/1u6pOkIcnkZ4R9W4XcpDcXiMCBOURHUho',
+        guidebook:
+            'https://drive.google.com/file/d/1liSe0Rpefr1nQ4ATyGXP11szdGxrf48Q/view?usp=sharing',
         about:
             'Paper competition is an event where students get the opportunity to present their innovations and discoveries regarding oil and gas industries in the form of a scientific research paper.',
         prize1: '3.000.000',
@@ -296,6 +308,7 @@ export const comps = [
     },
     {
         route: 'business-case-competition',
+        registrationIsOpen: false,
         title: 'Business Case Competition',
         quote: 'Adapting to Consumer Behaviour During a Time of Crisis',
         img: 'bcc',
