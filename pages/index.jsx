@@ -70,7 +70,7 @@ export default function Home() {
             <div>
                 <section
                     id='hero'
-                    className='p-8 bg-gray-300 py-52 min-h-screen flex flex-col justify-center items-center'
+                    className='flex flex-col items-center justify-center min-h-screen p-8 bg-gray-300 py-52'
                     style={{
                         backgroundImage: 'url("/img/bg-hero.jpg")',
                         backgroundSize: 'cover',
@@ -78,18 +78,18 @@ export default function Home() {
                 >
                     <main className='container'>
                         <img
-                            className='hero mx-auto w-full max-w-lg'
+                            className='w-full max-w-lg mx-auto hero'
                             src='/img/logo_hero.png'
                             alt='Logo Petrolida'
                         />
                         <h1 style={{ display: 'none' }}>
                             Petrolida ITS 2021, Petroleum Integrated Days
                         </h1>
-                        <blockquote className='hero text-center my-2 lg:text-lg'>
+                        <blockquote className='my-2 text-center hero lg:text-lg'>
                             Generating Efficient Utilization of Energy Supplies Through Advanced
                             Technology
                         </blockquote>
-                        <div className='hero flex justify-center button-group'>
+                        <div className='flex justify-center hero button-group'>
                             <Button
                                 href='#'
                                 onClick={(e) => {
@@ -110,14 +110,19 @@ export default function Home() {
                                 Register Now
                             </Button>
                         </div>
+                        <div className='flex justify-center mt-4 hero'>
+                            <Button href='/register/stock-market-education'>
+                                Register Stock Market Education
+                            </Button>
+                        </div>
                     </main>
                 </section>
 
-                <section id='petrolida' ref={petrol} className='overflow-hidden bg-primary py-24'>
+                <section id='petrolida' ref={petrol} className='py-24 overflow-hidden bg-primary'>
                     <main className='container white-im'>
-                        <div className='mb-16 flex flex-col md:flex-row justify-center items-center'>
+                        <div className='flex flex-col items-center justify-center mb-16 md:flex-row'>
                             <div className='left md:text-right'>
-                                <h3 className='white-im my-4 md:translate-x-1/2'>
+                                <h3 className='my-4 white-im md:translate-x-1/2'>
                                     What Is Petrolida
                                 </h3>
                                 <p className='mb-4 md:ml-auto md:max-w-md'>
@@ -129,14 +134,14 @@ export default function Home() {
                                 </p>
                             </div>
                             <img
-                                className='right mx-auto md:mx-0 max-h-44 md:max-h-64'
+                                className='mx-auto right md:mx-0 max-h-44 md:max-h-64'
                                 src='/img/what.png'
                                 alt='illus'
                             />
                         </div>
-                        <div className=' flex flex-col md:flex-row-reverse justify-center items-center'>
+                        <div className='flex flex-col items-center justify-center md:flex-row-reverse'>
                             <div className='right md:ml-4 md:mr-auto'>
-                                <h3 className='white-im my-4'>Petrolida's Goal</h3>
+                                <h3 className='my-4 white-im'>Petrolida's Goal</h3>
                                 <p className='mb-4 md:max-w-md'>
                                     Petrolida 2021 aims to serve as a platform for university
                                     students to explore and disclose their innovation regarding
@@ -146,7 +151,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <img
-                                className='left mx-auto md:mr-0 md:ml-auto max-h-44 md:max-h-64'
+                                className='mx-auto left md:mr-0 md:ml-auto max-h-44 md:max-h-64'
                                 src='/img/goals.png'
                                 alt='illus'
                             />
@@ -182,7 +187,7 @@ export default function Home() {
                         <figure className='recap md:mx-24'>
                             <div className='relative w-full h-auto overflow-hidden aspect'>
                                 <iframe
-                                    className='absolute top-0 left-0 right-0 bottom-0'
+                                    className='absolute top-0 bottom-0 left-0 right-0'
                                     width='100%'
                                     height='100%'
                                     title='Recap'
