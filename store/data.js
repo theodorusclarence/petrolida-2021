@@ -463,4 +463,14 @@ export const regis = [
         formheight: 5000,
         formheightmobile: 4400,
     },
+    {
+        route: 'stock-market-education',
+        title: 'Stock Market Education',
+        quote: 'Sekolah Pasar Modal Level 1 & 2',
+        img: 'stc',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSfKbqj8HZLg_ui3ZqttBv6OAoQjPbY4wwjjBMuA4CnUXmMJhw/viewform?embedded=true',
+        formheight: 1300,
+        formheightmobile: 1500,
+    },
 ];
