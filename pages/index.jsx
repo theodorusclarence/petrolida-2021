@@ -160,7 +160,7 @@ export default function Home() {
                 </section>
 
                 <section id='non-competition' className='py-20 text-center'>
-                    <main className='container'>
+                    <main className='container text-primary'>
                         <h2 className='mb-8'>Non-Competition Events</h2>
                         <NonComps />
                     </main>
@@ -182,7 +182,7 @@ export default function Home() {
                 </section>
 
                 <section id='recap' className='py-20 text-center'>
-                    <main className='container'>
+                    <main className='container text-primary'>
                         <h2 className='mb-8'>Our Last Recap</h2>
                         <figure className='recap md:mx-24'>
                             <div className='relative w-full h-auto overflow-hidden aspect'>

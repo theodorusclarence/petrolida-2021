@@ -362,14 +362,6 @@ export const comps = [
 
 export const noncomps = [
     {
-        route: 'petrolida-talks',
-        img: 'pt',
-        title: 'Petrolida Talks 2021',
-        theme: 'Enriching Your Knowledge in Entrepreneurship, Technology, and Energy Fields',
-        desc:
-            'Petrolida Talk 2021 is a talkshow that brings a new concept adapting to the new normal era. This event will be filled with speakers who are experienced and experts in their fields to discuss some current and important topics. Unlike other talk shows, by carrying out the hybrid concept between online and offline talkshows, the participants still have the opportunity to exchange ideas with the speakers while implementing health protocols. This talkshow is open to the public as an event that can provide information and education so that they can get inspiration to create ideas and works.',
-    },
-    {
         route: 'city-tour',
         img: 'ct',
         title: 'City Tour',
@@ -470,7 +462,118 @@ export const regis = [
         img: 'stc',
         formsrc:
             'https://docs.google.com/forms/d/e/1FAIpQLSfKbqj8HZLg_ui3ZqttBv6OAoQjPbY4wwjjBMuA4CnUXmMJhw/viewform?embedded=true',
-        formheight: 1300,
-        formheightmobile: 1500,
+        formheight: 1450,
+        formheightmobile: 1700,
+    },
+    {
+        white: true,
+        route: 'petrolida-talks',
+        title: 'Petrolida Talks 2021',
+        quote: 'Enriching Your Knowledge in Entrepreneurship, Technology, and Energy Fields',
+        img: 'pt',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSfWU3cdnXvsAiwpR3B1p1NHN9Wx6noA9ThJEXKZRfBElkEQaw/viewform?embedded=true',
+        formheight: 1912,
+        formheightmobile: 2300,
     },
 ];
+
+export const petrotalk = {
+    route: 'petrolida-talks',
+    img: 'pt',
+    title: 'Petrolida Talks 2021',
+    theme: 'Enriching Your Knowledge in Entrepreneurship, Technology, and Energy Fields',
+    desc:
+        "As a crucial generation in realizing Indonesia 2045 vision, which includes human development and the mastery of science-technology and sustainable growth, Petrolida Talks 2021 would like to contribute to the realization of those visions. Our aim is to give out inspiration and foster innovative thinking followed by the mastery of technology for this generation. With Petrolida's and the hosting organization, SPE's, background being in the oil and gas, we also bring up the future of the oil and gas industry to give updates and encourage our fellow petroleum enthusiasts. Therefore, Petrolida Talks 2021 will be discussing on today’s trends in oil and gas industry, entrepreneurship, technology, and technopreneurship.",
+    categories: [
+        {
+            ctg: 'Entrepreneurship',
+            title: 'View of the future by constructing an entrepreneurial and creative mindset',
+            date: '13',
+            excerpt:
+                'The fact that the numbers of entrepreneurs in Indonesia are increasing shows that more people are having an interest in developing their own business. Seen in that condition, we want to encourage more people to become competent entrepreneurs with creative ideas by learning more about the basics and a way to optimize their business to its fullest',
+            speakers: [
+                {
+                    name: 'Fellexandro Ruby',
+                    title: 'Founder of Wanderbites & Co',
+                    pic: 'entre-1-min.jpg',
+                },
+                {
+                    name: 'Sammy Bramantyo',
+                    title: 'Co-Founder and CEO of Lawless Burgerbar',
+                    pic: 'entre-2-min.jpg',
+                },
+            ],
+        },
+        {
+            ctg: 'Oil and Gas Industry',
+            title:
+                'Why Would Career in The Oil and Gas Industry Still be Relevant in The Years to Come?',
+            date: '13',
+            excerpt:
+                'Research and developments are slowly shifting to renewables to achieve sustainability and reduce the high amount of carbon emissions which in response to that, the oil and gas industry is one of the most highlighted sectors. Then, how will this situation affect careers in this industry? We will discuss it further in this segment',
+            speakers: [
+                {
+                    name: 'Dr. Ardian Nengkoda.',
+                    title: 'Group Lead Petroleum Engineering at Saudi Aramco',
+                    pic: 'oil-1-min.jpg',
+                },
+                {
+                    name: 'Asep Samsul Arifin, S.T., M.B.A.',
+                    title:
+                        'VP Portfolio Company Business Development and Portfolio at PT Pertamina',
+                    pic: 'oil-2-min.jpg',
+                },
+                {
+                    name: 'Malunlana Alamsah, S.T.',
+                    title: 'Drilling Fluids Supervisor at ADNOC Group',
+                    pic: 'oil-3-min.jpg',
+                },
+            ],
+        },
+        {
+            ctg: 'Technology',
+            title: 'What Do We Miss? And What To Keep Up On',
+            date: '14',
+            excerpt:
+                'Technology seems to have become a part of our lives. However, being a user is not enough, we are encouraged to be the one who develop and makes use of the technology so that it will be practical and useful for others. In this segment, we will get new insights on how to properly utilize technology in our lives and start a career in this industry',
+            speakers: [
+                {
+                    name: 'Teuku Muda Nanta',
+                    title:
+                        'Executive Vice President Telkom Regional at PT Telkom Indonesia – Telkom Regional 2',
+                    pic: 'tech-1-min.jpg',
+                },
+                {
+                    name: 'Purwahartono',
+                    title: 'Founder and President Director of Purwadhika Digital Technology School',
+                    pic: 'tech-2-min.jpg',
+                },
+                {
+                    name: 'Anbita Nadine Siregar',
+                    title: 'CEO of Generation Girl',
+                    pic: 'tech-3-min.jpg',
+                },
+            ],
+        },
+        {
+            ctg: 'Technopreneurship',
+            title: "Tech Vision Trends in Today's Business and Beyond",
+            date: '14',
+            excerpt:
+                "Technopreneurship is the art of combining one's technology prowess with entrepreneur skills. The growing impact of IT on business processes through specific forms of technology making the competition situations in business even higher. In this segment, we will discuss the development of a visionary-thinking attitude in basic learning to build technology-based businesses, and others",
+            speakers: [
+                {
+                    name: 'Hadi Wenas',
+                    title: 'CCO of Amartha',
+                    pic: 'techpre-1-min.jpg',
+                },
+                {
+                    name: 'Marsya Gusman',
+                    title: 'Founder of Womenpedia',
+                    pic: 'techpre-2-min.jpg',
+                },
+            ],
+        },
+    ],
+};
