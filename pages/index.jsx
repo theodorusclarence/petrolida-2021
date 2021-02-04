@@ -110,9 +110,12 @@ export default function Home() {
                                 Register Now
                             </Button>
                         </div>
-                        <div className='flex justify-center mt-4 hero'>
-                            <Button href='/register/stock-market-education'>
+                        <div className='flex justify-center mt-4 space-x-4 hero'>
+                            <Button outline href='/register/stock-market-education'>
                                 Register Stock Market Education
+                            </Button>
+                            <Button href='/register/petrolida-talks'>
+                                Register Petrolida Talks
                             </Button>
                         </div>
                     </main>

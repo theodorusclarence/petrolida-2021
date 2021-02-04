@@ -213,9 +213,7 @@ export default function NonCompetition() {
                         <hr className='border-t-2 border-opacity-50 border-primary tabs' />
 
                         <main className='max-w-4xl py-12 mx-auto space-y-2 tabs tab-content'>
-                            <h4 className='blockquote-title'>
-                                “{data.categories[category].title}”
-                            </h4>
+                            <h4 className='blockquote-title'>{data.categories[category].title}</h4>
                             {/* date hanya tanggalnya saja 13/14 */}
                             <h5>
                                 March {data.categories[category].date}

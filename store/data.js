@@ -488,7 +488,7 @@ export const petrotalk = {
     categories: [
         {
             ctg: 'Entrepreneurship',
-            title: 'View of the future by constructing an entrepreneurial and creative mindset',
+            title: 'View of The Future By Constructing An Entrepreneurial and Creative Mindset',
             date: '13',
             excerpt:
                 'The fact that the numbers of entrepreneurs in Indonesia are increasing shows that more people are having an interest in developing their own business. Seen in that condition, we want to encourage more people to become competent entrepreneurs with creative ideas by learning more about the basics and a way to optimize their business to its fullest',
