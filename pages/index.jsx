@@ -110,7 +110,7 @@ export default function Home() {
                                 Register Now
                             </Button>
                         </div>
-                        <div className='flex justify-center mt-4 space-x-4 hero'>
+                        <div className='space-y-4 mx-auto text-center justify-center mt-4 md:space-x-4 md:flex md:space-y-0 hero'>
                             <Button outline href='/register/stock-market-education'>
                                 Register Stock Market Education
                             </Button>

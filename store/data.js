@@ -550,8 +550,8 @@ export const petrotalk = {
                     pic: 'tech-2-min.jpg',
                 },
                 {
-                    name: 'Anbita Nadine Siregar',
-                    title: 'CEO of Generation Girl',
+                    name: 'Tania Soerianto',
+                    title: 'CPO of Generation Girl',
                     pic: 'tech-3-min.jpg',
                 },
             ],
@@ -572,6 +572,11 @@ export const petrotalk = {
                     name: 'Marsya Gusman',
                     title: 'Founder of Womenpedia',
                     pic: 'techpre-2-min.jpg',
+                },
+                {
+                    name: 'Randi Waranugraha',
+                    title: 'VP of Engineering Dana Indonesia',
+                    pic: 'techpre-3-min.jpg'
                 },
             ],
         },
