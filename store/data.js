@@ -485,6 +485,11 @@ export const petrotalk = {
     theme: 'Enriching Your Knowledge in Entrepreneurship, Technology, and Energy Fields',
     desc:
         "As a crucial generation in realizing Indonesia 2045 vision, which includes human development and the mastery of science-technology and sustainable growth, Petrolida Talks 2021 would like to contribute to the realization of those visions. Our aim is to give out inspiration and foster innovative thinking followed by the mastery of technology for this generation. With Petrolida's and the hosting organization, SPE's, background being in the oil and gas, we also bring up the future of the oil and gas industry to give updates and encourage our fellow petroleum enthusiasts. Therefore, Petrolida Talks 2021 will be discussing on today’s trends in oil and gas industry, entrepreneurship, technology, and technopreneurship.",
+    cpname1: 'Dyah Putri',
+    cptitle1: 'Coordinator of Petrolida Talks 2021',
+    cpphone1: '081703874334',
+    cpline1: 'dyahputrinariswari',
+    cpemail1: 'petrolidatalk2021@gmail.com',
     categories: [
         {
             ctg: 'Entrepreneurship',
@@ -502,6 +507,11 @@ export const petrotalk = {
                     name: 'Sammy Bramantyo',
                     title: 'Co-Founder and CEO of Lawless Burgerbar',
                     pic: 'entre-2-min.jpg',
+                },
+                {
+                    name: 'Benson Putra',
+                    title: 'Co-Founder and Idea Generator of Bartega Studio',
+                    pic: 'entre-3-min.jpg',
                 },
             ],
         },
@@ -576,7 +586,7 @@ export const petrotalk = {
                 {
                     name: 'Randi Waranugraha',
                     title: 'VP of Engineering Dana Indonesia',
-                    pic: 'techpre-3-min.jpg'
+                    pic: 'techpre-3-min.jpg',
                 },
             ],
         },

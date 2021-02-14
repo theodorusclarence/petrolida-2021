@@ -90,6 +90,18 @@ export default function NonCompetition() {
                 },
                 '-=1.5'
             );
+
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: '#cp',
+                start: 'top 50%',
+            },
+        }).from('.cp-card', {
+            opacity: 0,
+            y: 50,
+            stagger: 0.1,
+            ease: Power3.easeOut,
+        });
     }, []);
 
     useEffect(() => {
@@ -268,6 +280,29 @@ export default function NonCompetition() {
                     </main>
                 </section>
                 {/* End of Register Section */}
+
+                {/* CP  Section */}
+                <section id='cp' className='py-32'>
+                    <main className='container space-y-8'>
+                        <h2 className='text-center text-primary'>Contact Person</h2>
+                        <div className='flex items-center justify-center'>
+                            <div
+                                className='p-8 rounded-md shadow-md cp-card'
+                                style={{
+                                    backgroundImage: 'url("/img/bg-hero.jpg")',
+                                    backgroundSize: 'cover',
+                                }}
+                            >
+                                <h3 className='text-lg'>{data.cpname1}</h3>
+                                <p className='text-md'>{data.cptitle1}</p>
+                                <p className='text-md'>Phone Number : {data.cpphone1}</p>
+                                <p className='text-md'>Line ID : {data.cpline1}</p>
+                                <p className='text-md'>Email : {data.cpemail1}</p>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+                {/* CP Section */}
 
                 <Footer />
                 <style jsx>{`
