@@ -473,8 +473,8 @@ export const regis = [
         img: 'pt',
         formsrc:
             'https://docs.google.com/forms/d/e/1FAIpQLSfWU3cdnXvsAiwpR3B1p1NHN9Wx6noA9ThJEXKZRfBElkEQaw/viewform?embedded=true',
-        formheight: 1912,
-        formheightmobile: 2300,
+        formheight: 2300,
+        formheightmobile: 3000,
     },
 ];
 
