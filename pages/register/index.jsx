@@ -31,7 +31,7 @@ export default function Register() {
                     }}
                 >
                     <main className='container text-white'>
-                        <h2 className='mb-8'>Register Closed</h2>
+                        <h2 className='mb-8'>Competition Registration Closed</h2>
                         <Comps register />
                     </main>
                 </section>

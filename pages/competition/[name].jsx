@@ -486,7 +486,7 @@ export default function Competition({ comp }) {
                 {/* End of Prize Section */}
 
                 {/* Register Section */}
-                <section
+                {/* <section
                     id='register'
                     className='flex flex-col items-center justify-center p-8 py-24 overflow-hidden bg-gray-300'
                     style={{
@@ -510,7 +510,7 @@ export default function Competition({ comp }) {
                             )}
                         </div>
                     </main>
-                </section>
+                </section> */}
                 {/* End of Register Section */}
 
                 {/* CP  Section */}
