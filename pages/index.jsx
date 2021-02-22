@@ -111,9 +111,9 @@ export default function Home() {
                             </Button>
                         </div>
                         <div className='space-y-4 mx-auto text-center justify-center mt-4 md:space-x-4 md:flex md:space-y-0 hero'>
-                            <Button outline href='/register/stock-market-education'>
+                            {/* <Button outline href='/register/stock-market-education'>
                                 Register Stock Market Education
-                            </Button>
+                            </Button> */}
                             <Button href='/register/petrolida-talks'>
                                 Register Petrolida Talks
                             </Button>
