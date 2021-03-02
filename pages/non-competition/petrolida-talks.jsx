@@ -137,6 +137,16 @@ export default function NonCompetition() {
                         <div className='flex flex-col-reverse items-center justify-center mb-16 md:mb-0 md:flex-row'>
                             <div className='w-full text-white md:ml-12 md:text-left'>
                                 <h1 className='my-2 text-white hero'>{data.title}</h1>
+                                <div className="mb-6 space-x-4 flex hero">
+                                    <h3 className='hero'>
+                                        With 
+                                    </h3>
+                                    <img
+                                        className='hero w-32 lg:w-48'
+                                        src={`/img/petrotalk-sponsor-cimbw.png`}
+                                        alt='cimb-logo'
+                                    />
+                                </div>
                                 <h4 className='my-2 hero'>
                                     March 13<sup>th</sup> - 14<sup>th</sup>, 2021
                                 </h4>
