@@ -497,7 +497,7 @@ export default function Competition({ comp }) {
                 {/* End of Prize Section */}
 
                 {/* Register Section */}
-                {/* <section
+                <section
                     id='register'
                     className='flex flex-col items-center justify-center p-8 py-24 overflow-hidden bg-gray-300'
                     style={{
@@ -507,21 +507,15 @@ export default function Competition({ comp }) {
                 >
                     <main className='container'>
                         <h2 className='mb-4 text-center register-left text-primary md:mb-8 md:translate-x-1/2'>
-                            So, what are you waiting for?
+                            See you on the competition day!
                         </h2>
                         <div className='flex justify-center register-right button-group'>
-                            {comp.img === 'bcc' ? (
-                                <NewTabBtn href='/' outline>
-                                    Registration Closed
-                                </NewTabBtn>
-                            ) : (
-                                <Button href={`/register/${comp.route}`} outline>
-                                    Register Now
-                                </Button>
-                            )}
+                            <NewTabBtn href='/' outline>
+                                Registration Closed
+                            </NewTabBtn>
                         </div>
                     </main>
-                </section> */}
+                </section>
                 {/* End of Register Section */}
 
                 {/* CP  Section */}
