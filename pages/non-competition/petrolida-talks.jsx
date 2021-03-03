@@ -137,12 +137,10 @@ export default function NonCompetition() {
                         <div className='flex flex-col-reverse items-center justify-center mb-16 md:mb-0 md:flex-row'>
                             <div className='w-full text-white md:ml-12 md:text-left'>
                                 <h1 className='my-2 text-white hero'>{data.title}</h1>
-                                <div className="mb-6 space-x-4 flex hero">
-                                    <h3 className='hero'>
-                                        With 
-                                    </h3>
+                                <div className='flex items-center mt-4 mb-6 space-x-4 hero'>
+                                    <h2 className='hero'>With</h2>
                                     <img
-                                        className='hero w-32 lg:w-48'
+                                        className='w-32 hero lg:w-48'
                                         src={`/img/petrotalk-sponsor-cimbw.png`}
                                         alt='cimb-logo'
                                     />
