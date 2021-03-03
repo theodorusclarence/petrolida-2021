@@ -136,6 +136,17 @@ export default function Competition({ comp }) {
                         <div className='flex flex-col-reverse items-center justify-center mb-16 md:mb-0 md:flex-row'>
                             <div className='w-full md:ml-12 md:text-left text-primary'>
                                 <h1 className='my-4 hero text-primary'>{comp.title}</h1>
+                                {comp.img === 'bcc' ? (
+                                    <div className='flex items-center mt-4 mb-6 space-x-4 hero'>
+                                        <h3 className='hero'>In partnership with</h3>
+                                        <img
+                                            // style={{ filter: 'brightness(0) invert(1)' }}
+                                            className='w-20 px-2 bg-white rounded-full hero lg:w-28'
+                                            src={`/img/sponsor-cicil.png`}
+                                            alt='logo cicil'
+                                        />
+                                    </div>
+                                ) : null}
                                 <blockquote className='mb-4 hero md:max-w-md'>
                                     {comp.quote}
                                 </blockquote>
