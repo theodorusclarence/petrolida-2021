@@ -459,7 +459,7 @@ export default function Competition({ comp }) {
                             <div className='w-full place md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
-                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        src='/img/badge-silver.svg'
                                         alt='step 3'
                                         className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
@@ -470,7 +470,7 @@ export default function Competition({ comp }) {
                             <div className='w-full place md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
-                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        src='/img/badge-bronze.svg'
                                         alt='step 3'
                                         className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
@@ -483,7 +483,7 @@ export default function Competition({ comp }) {
                             <div className='w-full mx-auto mt-4 text-center place md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
-                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        src='/img/badge-bronze.svg'
                                         alt='step 3'
                                         className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
