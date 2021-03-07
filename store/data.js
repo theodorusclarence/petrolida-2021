@@ -592,3 +592,17 @@ export const petrotalk = {
         },
     ],
 };
+
+export const votes = [
+    {
+        route: 'oil-rig-design-competition',
+        title: 'Oil Rig Design Competition Voting',
+        quote:
+            'Utilizing Advanced and Innovative Offshore Platform to Optimize Energy Resources Efficiently',
+        img: 'ordc',
+        formsrc:
+            'https://docs.google.com/forms/d/e/1FAIpQLSebrEqXvK7Twsa5K-LAEAOA-VXVEsKqxelFI0oE_SJDFrJj8A/viewform?embedded=true',
+        formheight: 5500,
+        formheightmobile: 6200,
+    },
+];

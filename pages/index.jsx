@@ -183,26 +183,7 @@ export default function Home() {
                         <Comps />
                     </main>
                 </section>
-
-                <section id='recap' className='py-20 text-center'>
-                    <main className='container text-primary'>
-                        <h2 className='mb-8'>Our Last Recap</h2>
-                        <figure className='recap md:mx-24'>
-                            <div className='relative w-full h-auto overflow-hidden aspect'>
-                                <iframe
-                                    className='absolute top-0 bottom-0 left-0 right-0'
-                                    width='100%'
-                                    height='100%'
-                                    title='Recap'
-                                    src='https://www.youtube-nocookie.com/embed/SDeXDzWaFd8'
-                                    frameBorder='0'
-                                    allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
-                        </figure>
-                    </main>
-                </section>
+                
                 <style jsx>{`
                     .aspect {
                         padding-top: 56.25%;
