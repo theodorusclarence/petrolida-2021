@@ -51,10 +51,10 @@ export default function Home() {
 
         gsap.timeline({
             scrollTrigger: {
-                trigger: '#recap',
+                trigger: '#sponsors',
                 start: 'top 25%',
             },
-        }).from('.recap', {
+        }).from('.sponsors', {
             opacity: 0,
             duration: 1,
             y: 100,
@@ -110,13 +110,11 @@ export default function Home() {
                                 Register Now
                             </Button>
                         </div>
-                        <div className='space-y-4 mx-auto text-center justify-center mt-4 md:space-x-4 md:flex md:space-y-0 hero'>
+                        <div className='justify-center mx-auto mt-4 space-y-4 text-center md:space-x-4 md:flex md:space-y-0 hero'>
                             {/* <Button outline href='/register/stock-market-education'>
                                 Register Stock Market Education
                             </Button> */}
-                            <Button href='/register/petrolida-talks'>
-                                Register Petrolida Talks
-                            </Button>
+                            <Button href='/voting/oil-rig-design-competition'>Vote for ORDC</Button>
                         </div>
                     </main>
                 </section>
@@ -183,7 +181,14 @@ export default function Home() {
                         <Comps />
                     </main>
                 </section>
-                
+
+                <section id='sponsors' className='py-20 text-center'>
+                    <main className='container text-primary'>
+                        <h2 className='mb-12 sponsors'>Sponsors & Supporting Partners</h2>
+                        <img className='sponsors' src='/img/sponsors.jpg' alt='Sponsors' />
+                    </main>
+                </section>
+
                 <style jsx>{`
                     .aspect {
                         padding-top: 56.25%;
