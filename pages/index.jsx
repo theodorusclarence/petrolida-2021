@@ -114,7 +114,7 @@ export default function Home() {
                             {/* <Button outline href='/register/stock-market-education'>
                                 Register Stock Market Education
                             </Button> */}
-                            <Button href='/voting/oil-rig-design-competition'>Vote for ORDC</Button>
+                            {/* <Button href='/voting/oil-rig-design-competition'>Vote for ORDC</Button> */}
                         </div>
                     </main>
                 </section>
