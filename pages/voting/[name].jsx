@@ -92,60 +92,60 @@ export default function Register({ vote }) {
                 {/* Video Section */}
                 <section className='py-12'>
                     <main className='container items-center'>
-                        <div className='md:flex md:space-x-5 text-center'>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className='text-center md:flex md:space-x-5'>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/vbqfcELOha0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Tim Hore</h3>
+                                <h3>THEMELIO</h3>
                             </div>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/IgjMjGSbHdY"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Tim Hore</h3>
-                            </div>
-                        </div>
-                        <div className='md:flex md:space-x-5 text-center'>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <h3>Tim Hore</h3>
-                            </div>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <h3>Tim Hore</h3>
+                                <h3>TADIKA MESRA</h3>
                             </div>
                         </div>
-                        <div className='md:flex md:space-x-5 text-center'>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className='text-center md:flex md:space-x-5'>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/TDEazduyLVg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Tim Hore</h3>
+                                <h3>SPECTRUM</h3>
                             </div>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/L59U7By8cPo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Tim Hore</h3>
+                                <h3>IMPERIO</h3>
                             </div>
                         </div>
-                        <div className='md:flex md:space-x-5 text-center'>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className='text-center md:flex md:space-x-5'>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/u94f5whffIk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Tim Hore</h3>
+                                <h3>Gladiator Team</h3>
                             </div>
-                            <div className='md:w-1/2 space-y-2 my-8'>
-                                <div className='relative w-full overflow-hidden aspect md:flex md:space-x-4 mx-auto'>
-                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/emSv9TTHZVY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/bs5PawDozYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Tim Hore</h3>
+                                <h3>Agronauts</h3>
+                            </div>
+                        </div>
+                        <div className='text-center md:flex md:space-x-5'>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/ja2GbTUj5I4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <h3>BALAKOSA</h3>
+                            </div>
+                            <div className='my-8 space-y-2 md:w-1/2'>
+                                <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
+                                    <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/cGwYfYEfQMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <h3>ENDEAVOUR</h3>
                             </div>
                         </div>
                     </main>
