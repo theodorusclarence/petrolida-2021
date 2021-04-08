@@ -136,6 +136,17 @@ export default function Competition({ comp }) {
                         <div className='flex flex-col-reverse items-center justify-center mb-16 md:mb-0 md:flex-row'>
                             <div className='w-full md:ml-12 md:text-left text-primary'>
                                 <h1 className='my-4 hero text-primary'>{comp.title}</h1>
+                                {comp.img === 'bcc' ? (
+                                    <div className='flex items-center mt-4 mb-6 space-x-4 hero'>
+                                        <h3 className='hero'>In partnership with</h3>
+                                        <img
+                                            // style={{ filter: 'brightness(0) invert(1)' }}
+                                            className='w-20 px-2 bg-white rounded-full hero lg:w-28'
+                                            src={`/img/sponsor-cicil.png`}
+                                            alt='logo cicil'
+                                        />
+                                    </div>
+                                ) : null}
                                 <blockquote className='mb-4 hero md:max-w-md'>
                                     {comp.quote}
                                 </blockquote>
@@ -448,7 +459,7 @@ export default function Competition({ comp }) {
                             <div className='w-full place md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
-                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        src='/img/badge-silver.svg'
                                         alt='step 3'
                                         className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
@@ -459,7 +470,7 @@ export default function Competition({ comp }) {
                             <div className='w-full place md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
-                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        src='/img/badge-bronze.svg'
                                         alt='step 3'
                                         className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
@@ -472,7 +483,7 @@ export default function Competition({ comp }) {
                             <div className='w-full mx-auto mt-4 text-center place md:w-1/3'>
                                 <div className='inline-block p-3 text-center text-white transition border rounded-full border-primary bg-primary ripple hover:bg-hover focus:outline-none'>
                                     <img
-                                        src='https://www.flaticon.com/svg/static/icons/svg/3135/3135728.svg'
+                                        src='/img/badge-bronze.svg'
                                         alt='step 3'
                                         className='object-scale-down w-5 h-5 text-white fill-current'
                                     />
@@ -496,18 +507,12 @@ export default function Competition({ comp }) {
                 >
                     <main className='container'>
                         <h2 className='mb-4 text-center register-left text-primary md:mb-8 md:translate-x-1/2'>
-                            So, what are you waiting for?
+                            See you on the competition day!
                         </h2>
                         <div className='flex justify-center register-right button-group'>
-                            {comp.img === 'bcc' ? (
-                                <NewTabBtn href='/' outline>
-                                    Registration Closed
-                                </NewTabBtn>
-                            ) : (
-                                <Button href={`/register/${comp.route}`} outline>
-                                    Register Now
-                                </Button>
-                            )}
+                            <NewTabBtn href='/' outline>
+                                Registration Closed
+                            </NewTabBtn>
                         </div>
                     </main>
                 </section>

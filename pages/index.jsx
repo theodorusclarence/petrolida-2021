@@ -51,10 +51,10 @@ export default function Home() {
 
         gsap.timeline({
             scrollTrigger: {
-                trigger: '#recap',
+                trigger: '#sponsors',
                 start: 'top 25%',
             },
-        }).from('.recap', {
+        }).from('.sponsors', {
             opacity: 0,
             duration: 1,
             y: 100,
@@ -110,10 +110,11 @@ export default function Home() {
                                 Register Now
                             </Button>
                         </div>
-                        <div className='flex justify-center mt-4 hero'>
-                            <Button href='/register/stock-market-education'>
+                        <div className='justify-center mx-auto mt-4 space-y-4 text-center md:space-x-4 md:flex md:space-y-0 hero'>
+                            {/* <Button outline href='/register/stock-market-education'>
                                 Register Stock Market Education
-                            </Button>
+                            </Button> */}
+                            <Button href='/voting/oil-rig-design-competition'>Vote for ORDC</Button>
                         </div>
                     </main>
                 </section>
@@ -160,7 +161,7 @@ export default function Home() {
                 </section>
 
                 <section id='non-competition' className='py-20 text-center'>
-                    <main className='container'>
+                    <main className='container text-primary'>
                         <h2 className='mb-8'>Non-Competition Events</h2>
                         <NonComps />
                     </main>
@@ -181,25 +182,13 @@ export default function Home() {
                     </main>
                 </section>
 
-                <section id='recap' className='py-20 text-center'>
-                    <main className='container'>
-                        <h2 className='mb-8'>Our Last Recap</h2>
-                        <figure className='recap md:mx-24'>
-                            <div className='relative w-full h-auto overflow-hidden aspect'>
-                                <iframe
-                                    className='absolute top-0 bottom-0 left-0 right-0'
-                                    width='100%'
-                                    height='100%'
-                                    title='Recap'
-                                    src='https://www.youtube-nocookie.com/embed/SDeXDzWaFd8'
-                                    frameBorder='0'
-                                    allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
-                        </figure>
+                <section id='sponsors' className='py-20 text-center'>
+                    <main className='container text-primary'>
+                        <h2 className='mb-12 sponsors'>Sponsors & Supporting Partners</h2>
+                        <img className='sponsors' src='/img/sponsors.jpg' alt='Sponsors' />
                     </main>
                 </section>
+
                 <style jsx>{`
                     .aspect {
                         padding-top: 56.25%;

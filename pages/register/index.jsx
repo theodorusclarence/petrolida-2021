@@ -1,6 +1,7 @@
 import Comps from '../../components/Comps';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
+import NonComps from '../../components/NonComps';
 import Seo from '../../components/Seo';
 
 export default function Register() {
@@ -14,6 +15,12 @@ export default function Register() {
             </Seo>
             <Navbar />
             <div>
+                <section className='py-20'>
+                    <main className='container text-primary text-center'>
+                        <h2 className='my-8'>Register for Non Competition</h2>
+                        <NonComps register petro />
+                    </main>
+                </section>
                 <section
                     id='competition'
                     className='py-20 text-center'
@@ -23,8 +30,8 @@ export default function Register() {
                         backgroundPosition: 'center center',
                     }}
                 >
-                    <main className='container'>
-                        <h2 className='mb-8 text-white'>Register Now!</h2>
+                    <main className='container text-white'>
+                        <h2 className='mb-8'>Competition Registration Closed</h2>
                         <Comps register />
                     </main>
                 </section>

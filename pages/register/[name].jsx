@@ -39,7 +39,7 @@ export default function Register({ reg }) {
             <div>
                 {/* Hero Section */}
                 <section
-                    className='bg-gray-300 flex items-center'
+                    className='flex items-center bg-gray-300'
                     style={{
                         backgroundImage: `url("/img/bg-${reg.img}.jpg")`,
                         backgroundPosition: 'center center',
@@ -48,13 +48,17 @@ export default function Register({ reg }) {
                     }}
                 >
                     <main className='container'>
-                        <div className='mb-16 md:mb-0 flex flex-col-reverse md:flex-row justify-center items-center'>
-                            <div className='w-full md:ml-12 md:text-left text-primary'>
-                                <h1 className='hero my-4 text-primary'>{reg.title}</h1>
-                                <blockquote className='hero mb-4'>{reg.quote}</blockquote>
-                                {/* <div className='hero items-center space-x-4'>
+                        <div className='flex flex-col-reverse items-center justify-center mb-16 md:mb-0 md:flex-row'>
+                            <div
+                                className={`w-full md:ml-12 md:text-left ${
+                                    reg.white ? 'text-white' : 'text-primary'
+                                }`}
+                            >
+                                <h1 className='my-4 hero '>{reg.title}</h1>
+                                <blockquote className='mb-4 hero'>{reg.quote}</blockquote>
+                                {/* <div className='items-center space-x-4 hero'>
                                     <Button href='/'>Guidebook</Button>
-                                    <button className='p-2 md:p-3 justify-center items-center text-center text-primary bg-primary rounded-full hover:bg-hover'>
+                                    <button className='items-center justify-center p-2 text-center rounded-full md:p-3 text-primary bg-primary hover:bg-hover'>
                                         <svg
                                             className='w-3 h-3 text-white'
                                             xmlns='http://www.w3.org/2000/svg'
@@ -71,7 +75,7 @@ export default function Register({ reg }) {
                                 </div> */}
                             </div>
                             <img
-                                className='hero mx-auto md:mx-0  max-h-44 md:max-h-64'
+                                className='mx-auto hero md:mx-0 max-h-44 md:max-h-64'
                                 src={`/img/logo-${reg.img}.png`}
                                 alt='Illustrasi'
                             />

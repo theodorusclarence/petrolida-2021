@@ -4,7 +4,7 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { useEffect } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
-export default function NonComps() {
+export default function NonComps({ register, petro }) {
     useEffect(() => {
         gsap.timeline({
             scrollTrigger: {
@@ -37,10 +37,17 @@ export default function NonComps() {
             text: 'Gala Dinner',
         },
     ];
+
+    // only show petrotalk
+    if (petro) {
+        noncomps.pop();
+        noncomps.pop();
+    }
+
     return (
-        <div className='grid md:grid-cols-3 gap-4 justify-center md:mx-16'>
+        <div className={`grid justify-center gap-4 ${petro ? '' : 'md:grid-cols-3'} md:mx-16`}>
             {noncomps.map(({ route, img, text }) => (
-                <Card non key={route} img={img} text={text} route={route} />
+                <Card register={register} non key={route} img={img} text={text} route={route} />
             ))}
         </div>
     );
