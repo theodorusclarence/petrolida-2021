@@ -131,7 +131,7 @@ export default function Register({ vote }) {
                                 <div className='relative w-full mx-auto overflow-hidden aspect md:flex md:space-x-4'>
                                     <iframe className='absolute top-0 bottom-0 left-0 right-0' width="100%" height="100%" src="https://www.youtube.com/embed/bs5PawDozYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <h3>Agronauts</h3>
+                                <h3>Argonauts</h3>
                             </div>
                         </div>
                         <div className='text-center md:flex md:space-x-5'>
