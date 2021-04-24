@@ -2,6 +2,8 @@
 
 This is a website for Petrolida 2021 by SPE ITS SC. Made with Next.js, Tailwindcss, and GSAP.
 
+![Screenshot](public/screenshot.png)
+
 © [Theodorus Clarence](https://theodorusclarence.com) & [Ishaq Adheltyo](https://www.linkedin.com/in/ishaq-adheltyo-b53832106/)
 
 ## Deployment
