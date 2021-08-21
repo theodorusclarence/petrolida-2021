@@ -13,6 +13,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "theodorusclarence",
+      "name": "Theodorus Clarence",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55318172?v=4",
+      "profile": "https://theodorusclarence.com",
+      "contributions": [
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
