@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ishaqadhel",
+      "name": "ishaqadhel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49280352?v=4",
+      "profile": "https://ishaqadhel.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "petrolida-2021",
+  "projectOwner": "theodorusclarence",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
