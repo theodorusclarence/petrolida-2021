@@ -6,6 +6,15 @@
   "commit": false,
   "contributors": [
     {
+      "login": "ishaqadhel",
+      "name": "ishaqadhel",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49280352?v=4",
+      "profile": "https://ishaqadhel.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "theodorusclarence",
       "name": "Theodorus Clarence",
       "avatar_url": "https://avatars.githubusercontent.com/u/55318172?v=4",
